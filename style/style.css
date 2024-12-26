@@ -1,116 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/bg_pic.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-color: black !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/bg_pic.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
-.AddressBar{
-    width: 100%;
-    height: fit-content;
-    padding: 2vh;
-    background-color: #FF4955;
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
+/* ************* section Header starts here ************* */
+
+.AddressBar {
+  width: 100%;
+  height: fit-content;
+  padding: 2vh;
+  background-color: #ff4955;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.AddressBar>p{
-    font-size: 1.15vw;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(219, 218, 224);
-    display: flex;
-    align-items: center;
-    margin-left: 12vw;
+.AddressBar > p {
+  font-size: 1.15vw;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(219, 218, 224);
+  display: flex;
+  align-items: center;
+  margin-left: 12vw;
 }
-.navbar{
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0,0,0,0.2);
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-.navbar>img{
-    width: 22vw;
-    height: fit-content;
-    margin-left: 9vw;
-    border-radius: 50%;
+.navbar > a > img {
+  width: 22vw;
+  height: fit-content;
+  margin-left: 9vw;
+  border-radius: 50%;
 }
-.navbar>ul{
-    display: flex;
-    list-style-type: none;
-    margin-left: 8vw;
+.navbar > ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 8vw;
 }
-.navbar>ul>li{
-    margin-left: 4vw;
-    font-size: 1.4vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+.navbar > ul > li {
+  margin-left: 4vw;
+  font-size: 1.4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
-.navbar>ul>li>a:hover{
-    color: #FF4955;
-    transition: .6s;
+.navbar > ul > li > a:hover {
+  color: #ff4955;
+  transition: 0.6s;
 }
-.navbar>ul>li>a{
-    text-decoration: none;
-    color: rgb(219, 218, 224);
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: rgb(219, 218, 224);
 }
 
+/* ************* section Header ends here ************* */
 
+/* ************* section Footer starts here ************* */
 
-
-
-footer{
-    width: 100%;
-    height: fit-content;
-    padding: 4vw;
-    /* background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 1)), url(../Images/bg_pic.jpg);
-    background-size:cover ; */
-    background-color: rgba(0,0,0,0.6);
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: flex;
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4vw;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+      url(../Images/bg_pic.jpg);
+    background-size: cover; */
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
 }
 
-.footer-img>img{
-    width: 22vw;
-    height: 14vh;
+.footer-img > a > img {
+  width: 22vw;
+  height: 14vh;
+  object-fit: cover;
+  aspect-ratio: 1;
 }
-footer>.shop-div{
-    margin-left: 6vw;
+footer > .shop-div {
+  margin-left: 6vw;
 }
-.shop-div,.company-div,.support-div,.contact-div{
-    margin-left: 6vw;
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+  margin-left: 6vw;
 }
-.shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-    font-size: 2.3vw;
-    color: #FF4955;
-    margin-bottom: 1vw;
+.shop-div > h1,
+.company-div > h1,
+.support-div > h1,
+.contact-div > h1 {
+  font-size: 2.3vw;
+  color: #ff4955;
+  margin-bottom: 1vw;
 }
-.shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1.3vw;
+.shop-div > ul > li > a,
+.company-div > ul > li > a,
+.support-div > ul > li > a,
+.contact-div > ul > li > a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3vw;
 }
-.shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-    color: aliceblue;
-    font-size: 1.3vw;
-    list-style-type: none;
-    padding-top: .7vw;
-    margin-top: .7vw;
+.shop-div > ul > li,
+.company-div > ul > li,
+.support-div > ul > li,
+.contact-div > ul > li {
+  color: aliceblue;
+  font-size: 1.3vw;
+  list-style-type: none;
+  padding-top: 0.7vw;
+  margin-top: 0.7vw;
 }
-.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-    font-size: 1.4vw;
-    color: aliceblue;
-    text-shadow: 1px 1px #FF4955;
-    margin-top: 1vw;
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
+  font-size: 1.4vw;
+  color: aliceblue;
+  text-shadow: 1px 1px 3px #ff4955;
+  margin-top: 1vw;
 }
+
+/* ************* section Footer ends here ************* */
