@@ -156,8 +156,7 @@ main {
 /* ************* section Product cards starts here ************* */
 
 .product-cards {
-  margin-left: 6vw;
-  margin-right: 6vw;
+  margin: 6vw;
   .text {
     margin: 8vh;
     text-align: center;
@@ -179,7 +178,10 @@ main {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
+    a {
+      text-decoration: none;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -192,6 +194,11 @@ main {
         h3 {
           margin: 1rem 1rem 1rem 0;
           color: aliceblue;
+          transition: linear 0.2s;
+          -webkit-transition: linear 0.2s;
+          -moz-transition: linear 0.2s;
+          -ms-transition: linear 0.2s;
+          -o-transition: linear 0.2s;
         }
         .icos {
           margin: -1px;
@@ -204,12 +211,35 @@ main {
           font-size: 12px;
           font-family: "Manrope";
           color: aliceblue;
+          s {
+            color: #808080;
+          }
         }
       }
       img {
         height: auto;
         width: 20vw;
       }
+      transition: linear 0.2s;
+      -webkit-transition: linear 0.2s;
+      -moz-transition: linear 0.2s;
+      -ms-transition: linear 0.2s;
+      -o-transition: linear 0.2s;
+    }
+  }
+  .card:hover {
+    scale: 0.95;
+    img {
+      filter: brightness(85%);
+      -webkit-filter: brightness(85%);
+    }
+    .txt {
+      h3 {
+        color: #ff4955;
+      }
+    }
+    p {
+      color: #ff4955;
     }
   }
 }
