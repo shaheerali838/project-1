@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/bg_pic.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -20,18 +20,17 @@ button {
 h1 {
   font-family: "league gothic";
 }
-.AddressBar {
-  width: 100vw;
-
+.AddressBar{
+  width: 100%;
   height: fit-content;
   padding: 2vh;
-  background-color: #ff4955;
+  background-color: #FF4955;
   display: flex;
   position: relative;
   top: 0;
   left: 0;
 }
-.AddressBar > p {
+.AddressBar>p{
   font-size: 1.15vw;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -40,47 +39,96 @@ h1 {
   align-items: center;
   margin-left: 12vw;
 }
-
-.navbar {
+.navbar{
   display: flex;
   position: sticky;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0,0,0,0.3);
 }
-.navbar > a > img {
-  width: 22vw;
+.navbar>a>img{
+  width: 19vw;
   height: fit-content;
   margin-left: 9vw;
   border-radius: 50%;
 }
-.navbar > ul {
+.navbar>ul{
   display: flex;
   list-style-type: none;
   margin-left: 8vw;
 }
-.navbar > ul > li {
-  margin-left: 4vw;
-  font-size: 1.4vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+.navbar>ul>li{
+  margin-left: 6vw;
+  font-size: 1.7vw;
+  font-family: league gothic;
 }
-.navbar > ul > li > a:hover {
-  color: #ff4955;
-  transition: 0.6s linear;
-  -webkit-transition: 0.6s linear;
-  -moz-transition: 0.6s linear;
-  -ms-transition: 0.6s linear;
-  -o-transition: 0.6s linear;
+.navbar>ul>li>a:hover{
+  color: #FF4955;
+  transition: .6s;
 }
-.navbar > ul > li > a {
+.navbar>ul>li>a{
   text-decoration: none;
   color: rgb(219, 218, 224);
 }
+@media screen and (max-width: 620px) {
+  .AddressBar{
+      width: 100%;
+      height: fit-content;
+      padding: 1vh;
+      background-color: #FF4955;
+      display: flex;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  .AddressBar>p{
+      font-size: 1.4vw;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(219, 218, 224);
+      display: flex;
+      align-items: center;
+      margin-left: 12vw;
+  }
+  .navbar{
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      display: block;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      background-color: rgba(0,0,0,0.2);
+      text-align: center;
+  }
+  .navbar>a>img{
+      width: 38vw;
+      height: 18vw;
+      margin-left: 9vw;
+      border-radius: 50%;
+  }
+  .navbar>ul{
+      display: block;
+      list-style-type: none;
+      margin-left: 8vw;
+  }
+  .navbar>ul>li{
+      font-size: 3vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      background-color: rgba(0,0,0,0.2);
+      margin: .3vw;
+      padding: 1vw 0vw;
+  }   
+}
+
+
+
 
 /* ************* section Header ends here ************* */
 
@@ -543,134 +591,98 @@ footer{
 
 /* ************* section Footer starts here ************* */
 
-footer {
-  /* margin-top: 5rem; */
-  width: 100vw;
+footer{
+  width: 100%;
   height: fit-content;
   padding: 4vw;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
-      url(../Images/bg_pic.jpg);
-    background-size: cover; */
-  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 13vh;
+  background-color: rgba(0,0,0,0.4);
   position: relative;
   bottom: 0;
   left: 0;
   display: flex;
-  /* background-image: url(../Images/bg_pic.jpg); */
-}
-.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-    font-size: 1.4vw;
-    color: aliceblue;
-    text-shadow: 1px 1px #FF4955;
-    margin-top: 1vw;
 }
 
-@media screen and (max-width: 620px){
-    footer{
-        width: 100%;
-        height: fit-content;
-        padding: 4vw;
-        background-color: rgba(0,0,0,0.6);
-        position: relative;
-        bottom: 0;
-        left: 0;
-        display: block;
-        text-align: center;
-    }
-    
-    .footer-img>img{
-        width: 38vw;
-        height: 13vh;
-    }
-    footer>.shop-div{
-        margin-left: 6vw;
-    }
-    .shop-div,.company-div,.support-div,.contact-div{
-        margin: 9vw 0vw 0vw 6vw;
-    }
-    .shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-        font-size: 4.5vw;
-        color: #FF4955;
-        margin-bottom: 1vw;
-    }
-    .shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-        text-decoration: none;
-        color: #f0f8ff;
-        font-size: 3vw;
-    }
-    .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-        color: aliceblue;
-        font-size: 3vw;
-        list-style-type: none;
-        padding-top: 1.2vw;
-        margin-top: .7vw;
-    }
-    .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-        font-size: 3.5vw;
-        color: aliceblue;
-        text-shadow: .15vw .15vw #FF4955;
-        margin-top: 3vw;
-    }
-}
-
-.footer-img > a > img {
+.footer-img>a>img{
   width: 22vw;
   height: 14vh;
-  object-fit: cover;
-  aspect-ratio: 1;
 }
-footer > .shop-div {
+footer>.shop-div{
   margin-left: 6vw;
 }
-.shop-div,
-.company-div,
-.support-div,
-.contact-div {
+.shop-div,.company-div,.support-div,.contact-div{
   margin-left: 6vw;
-  width: 20vw;
 }
-.shop-div > h1,
-.company-div > h1,
-.support-div > h1,
-.contact-div > h1 {
+.shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
   font-size: 2.3vw;
-  width: 5vw;
-  color: #ff4955;
+  color: #FF4955;
   margin-bottom: 1vw;
 }
-.shop-div > ul > li > a,
-.company-div > ul > li > a,
-.support-div > ul > li > a,
-.contact-div > ul > li > a {
+.shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
   text-decoration: none;
-  width: 10vw;
   color: aliceblue;
   font-size: 1.3vw;
 }
-.shop-div > ul > li,
-.company-div > ul > li,
-.support-div > ul > li,
-.contact-div > ul > li {
+.shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
   color: aliceblue;
   font-size: 1.3vw;
   list-style-type: none;
-  padding-top: 0.7vw;
-  margin-top: 0.7vw;
-  width: 10vw;
+  padding-top: .7vw;
+  margin-top: .7vw;
 }
-.shop-div > ul > h3,
-.company-div > ul > h3,
-.support-div > ul > h3,
-.contact-div > ul > h3 {
-  width: 10vw;
+.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
   font-size: 1.4vw;
   color: aliceblue;
-  text-shadow: 1px 1px 3px #ff4955;
+  text-shadow: 1px 1px #FF4955;
   margin-top: 1vw;
 }
 
-.contact-div ul li {
-  width: 20vw;
+@media screen and (max-width: 620px){
+  footer{
+      width: 100%;
+      height: fit-content;
+      padding: 4vw;
+      background-color: rgba(0,0,0,0.6);
+      position: relative;
+      bottom: 0;
+      left: 0;
+      display: block;
+      text-align: center;
+  }
+  
+  .footer-img>img{
+      width: 38vw;
+      height: 13vh;
+  }
+  footer>.shop-div{
+      margin-left: 6vw;
+  }
+  .shop-div,.company-div,.support-div,.contact-div{
+      margin: 9vw 0vw 0vw 6vw;
+  }
+  .shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
+      font-size: 4.5vw;
+      color: #FF4955;
+      margin-bottom: 1vw;
+  }
+  .shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
+      text-decoration: none;
+      color: #f0f8ff;
+      font-size: 3vw;
+  }
+  .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
+      color: aliceblue;
+      font-size: 3vw;
+      list-style-type: none;
+      padding-top: 1.2vw;
+      margin-top: .7vw;
+  }
+  .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
+      font-size: 3.5vw;
+      color: aliceblue;
+      text-shadow: .15vw .15vw #FF4955;
+      margin-top: 3vw;
+  }
 }
 
 /* ************* section Footer ends here ************* */
