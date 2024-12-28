@@ -1,73 +1,93 @@
-h1{
+h1 {
     text-align: center;
     color: white;
     font-size: 70px;
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
-.para{
+
+.para {
     width: 530px;
     color: white;
 }
-.form{
+
+.form {
     width: 530px;
 }
-.Hamza{
+
+.Hamza {
     font-size: 50px;
 }
-.hmza{
+
+.hmza {
     font-size: 20px;
 }
-.info p{
+
+.info p {
     font-size: 20px;
 }
-.infoHead{
-    color: rgb(252,55,70);
+
+.infoHead {
+    color: rgb(252, 55, 70);
     font-weight: 800;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.p{
+
+.p {
     margin-bottom: 10px;
 }
+
 /* form starts*/
-.HAmza{
+.HAmza {
     color: white;
     font-size: 20px;
 }
-.HAMZA{
+
+.HAMZA {
 
     height: 50px;
     width: 200px;
 }
-.emaill{
+
+.emaill {
 
     height: 50px;
     width: 425px;
 }
-.button{
 
-    
+.button {
+
+
     height: 35px;
     border: none;
     border-radius: 10px;
     width: 130px;
-    background-color: rgb(252,55,70);
+    background-color: rgb(252, 55, 70);
     color: white;
     font-size: 16px;
 
 }
-.button:hover{
+
+.button:hover {
     background-color: red;
 }
-iframe{
-      
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+iframe {
+
     display: flex;
     justify-content: center;
     height: 400px;
-    width: 100%;
+    width: 80%;
 }
