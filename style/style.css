@@ -7,12 +7,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/bg_pic.jpg);
+  /* background-color: black !important; */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/bg_pic.jpg); */
+  background-color: black !important;
   background-size: cover;
-  background-attachment: fixed;
+  /* font-size: 62.5%; */
 }
+
 /* ************* section Header starts here ************* */
+
 button {
   font-family: "league gothic";
 }
@@ -22,6 +30,11 @@ h1 {
 }
 .AddressBar{
   width: 100%;
+}
+.AddressBar {
+  width: 100%;
+
+  font-family: "league gothic";
   height: fit-content;
   padding: 2vh;
   background-color: #FF4955;
@@ -30,7 +43,9 @@ h1 {
   top: 0;
   left: 0;
 }
-.AddressBar>p{
+
+.AddressBar > p {
+  font-family: "league gothic";
   font-size: 1.15vw;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,6 +57,7 @@ h1 {
 .navbar{
   display: flex;
   position: sticky;
+  flex-wrap: wrap;
   top: 0;
   left: 0;
   display: flex;
@@ -49,22 +65,39 @@ h1 {
   width: 100%;
   height: fit-content;
   background-color: rgba(0,0,0,0.3);
+  font-family: "league gothic";
 }
 .navbar>a>img{
   width: 19vw;
   height: fit-content;
   margin-left: 9vw;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.navbar>ul{
+
+.navbar > ul {
+  font-family: "league gothic";
   display: flex;
   list-style-type: none;
   margin-left: 8vw;
+  flex-wrap: wrap;
 }
+
 .navbar>ul>li{
   margin-left: 6vw;
   font-size: 1.7vw;
   font-family: league gothic;
+}
+.navbar > ul > li {
+  margin-left: 4vw;
+  font-size: 1.4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "league gothic";
 }
 .navbar>ul>li>a:hover{
   color: #FF4955;
@@ -134,9 +167,242 @@ h1 {
 
 /* ************* section Main starts here ************* */
 
+.done{
+  background-color: black;
+}
+main{
+
+  background-color: rgb(197, 191, 191);
+  font-family: sans-serif;
+  
+}
+.wasi{
+
+  /* color: white; */
+  width: 100vw;
+  height: 60vh;
+background-image: url(../Images/img1.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+object-fit: cover;
+aspect-ratio: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-weight: 900;
+font-weight: bolder;
+letter-spacing: 10px;
+font-size: xx-large;
+font-family: sans-serif;
+}
+.wasi h1{
+  color:black;
+margin-top: 20px;
+}
+.hmz{
+  background-color: black !important;
+  color:white;
+  height: 60vh;
+  width: 90vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* color: white; */
+margin: auto;
+margin-top: 50px;
+display: grid;
+/* border: 1px solid red; */
+grid-template-columns: auto auto;
+/* justify-content: center; */
+/* align-items: center; */
+font-family: sans-serif;
+
+}
+.ok h1{
+ 
+  border: none;
+  
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+
+}
+.ok p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.ok{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: sans-serif;
+  /* padding-right: 50px; */
+  
+}
+.pc{  font-family: sans-serif;
+  background-image: url(../Images/img2.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  /* margin-top: -20px; */
+  width: 600px;
+  height: 383px;
+  /* border: 1px solid blue; */
+}
+.team{
+  font-family: sans-serif;
+  width: 100vw;
+  height: 120vh;
+  /* border: 1px solid blue; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+/* border: 1px solid red; */
+margin-top: 50px;
+  
+background-color: black !important;
+}
+.hedp{
+  font-family: sans-serif;
+  margin-left: 50px;
+/* border: 1px solid yellow; */
+text-align: center;
+color: white;
+}
+.hedp h1{
+  letter-spacing: 5px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hedp p{
+width: 70vw;
+height: 20vh;
+ /* border: 1px solid black; */
+ padding-left: 60px;
+ padding-right: 60px;
+line-height: 20px;
+}
+
+.pics{
+  font-family: sans-serif;
+  margin-top: 30px;
+  width: 70vw;
+  height: 50vh;
+  margin-left: 50px;
+padding-left: 100px;
+  /* background-color: red; */
+display: grid;
+grid-template-columns: auto auto auto;
+}
+.same{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: black;
+  /* border: 2px solid yellow; */
+  width: 150px;
+  height: 100px;
+  font-family: sans-serif;
+}
+.same i{
+  position: relative;
+  top: -29px;
+  left: 20px;
+}
+.a2 i{
+  position: relative;
+  left: 50px;
+}
+.a3 i{
+position: relative;
+left: 50px;
+}
+.a4 i{
+  position: relative;
+  left: 60px;
+}
+.a5 i{
+  position: relative;
+  left: 60px;
+}
+.a6 i{
+  position: relative;
+  left: 20px;
+}
+.a7 i{
+  position: relative;
+  left: 30px;
+}
+.a8 i{
+  position: relative;
+  left: 40px;
+}
+.a9 i{
+  position: relative;
+  left: 50px;
+}
+.FOLLOW{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../Images/img3.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  font-family: sans-serif;
+
+}
+.us{
+  font-family: sans-serif;
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  margin: auto;
+border: 1px solid blue;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: black;
+color: white;
+}
+.icon ul{
+  margin-top: 30px;
+}
+.icon li{
+ padding-left: 10px;
+  display: inline;
+}
+.world{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+justify-content: center;
+margin: auto;
+width: 95vw;
+height: 50vh;
+}
+.ok{
+  
+ 
+  margin-left: 200px;
+}
 main {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -149,7 +415,7 @@ main {
     position: relative;
     display: inline-block;
     /* margin: 10rem; */
-    width: 100vw;
+    width: 100%;
     height: 100%;
     .text {
       padding: 5rem;
@@ -201,7 +467,7 @@ main {
   }
 }
 
-/* ************* section Main ends here ************* */
+/* ************* section Main ends here************* */
 
 /* ************* section Product cards starts here ************* */
 
@@ -299,11 +565,11 @@ main {
 /* ************* section Pink-Headphones starts here ************* */
 
 .pink-headphones {
-  width: 100vw;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  margin: 2rem;
+  /* padding: 10rem; */
+  margin-right: 2rem;
   .text {
     display: flex;
     flex-direction: column;
@@ -365,7 +631,8 @@ main {
     .img1 {
       position: relative;
       img {
-        height: 90vh;
+        /* padding-right: 10rem; */
+        height: 90%;
       }
       .img2 {
         img {
@@ -379,59 +646,6 @@ main {
   }
 }
 
-@media screen and (max-width: 620px) {
-    .AddressBar{
-        width: 100%;
-        height: fit-content;
-        padding: 1vh;
-        background-color: #FF4955;
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    .AddressBar>p{
-        font-size: 1.4vw;
-        font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(219, 218, 224);
-        display: flex;
-        align-items: center;
-        margin-left: 12vw;
-    }
-    .navbar{
-        display: flex;
-        position: sticky;
-        top: 0;
-        left: 0;
-        display: block;
-        align-items: center;
-        width: 100%;
-        height: fit-content;
-        background-color: rgba(0,0,0,0.2);
-        text-align: center;
-    }
-    .navbar>img{
-        width: 38vw;
-        height: 18vw;
-        margin-left: 9vw;
-        border-radius: 50%;
-    }
-    .navbar>ul{
-        display: block;
-        list-style-type: none;
-        margin-left: 8vw;
-    }
-    .navbar>ul>li{
-        font-size: 3vw;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        background-color: rgba(0,0,0,0.2);
-        margin: .3vw;
-        padding: 1vw 0vw;
-    }   
-}
-
 /* ************* section Pink-Headphones ends here ************* */
 
 /* ************* section Why-us starts here ************* */
@@ -439,68 +653,68 @@ main {
   height: 100vh;
   display: flex;
   padding: 2rem;
-  margin: 2rem;
+  /* margin: 2rem; */
   justify-content: space-between;
 }
-  .why {
-    h2 {
-      font-family: "Kaushan Script";
-      font-size: 30px;
-      line-height: 36px;
+.why {
+  h2 {
+    font-family: "Kaushan Script";
+    font-size: 30px;
+    line-height: 36px;
+    color: #ff4955;
+  }
+  h1 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 78px;
+    line-height: 62px;
+    width: 35vw;
+    font-weight: 400;
+    font-family: "league gothic";
+    span {
       color: #ff4955;
     }
-    h1 {
-      margin-top: 1rem;
-      text-transform: uppercase;
-      color: aliceblue;
-      font-size: 78px;
-      line-height: 62px;
-      width: 35vw;
-      font-weight: 400;
-      font-family: "league gothic";
-      span {
-        color: #ff4955;
-      }
-    }
   }
-  .reasons {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-
-  }
-
-
-footer{
-    width: 100%;
-    height: fit-content;
-    padding: 4vw;
-    background-color: rgba(0,0,0,0.6);
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: flex;
 }
-    .plates {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem;}
-      h2 {
-        font-family: "league gothic";
-        color: aliceblue;
-        font-size: 24px;
-        line-height: 29px;
-        font-weight: 400;
-        margin: 1rem 0 1rem 0;
-      }
-      p {
-        font-family: "Manrope";
-        color: aliceblue;
-      }
-      i {
-        font-size: 30px;
-        color: aliceblue;
-      }
+.reasons {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-image: url(../Images/bg_pic.jpg);
+}
+.plates {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+h2 {
+  font-family: "league gothic";
+  color: aliceblue;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  margin: 1rem 0 1rem 0;
+}
+p {
+  font-family: "Manrope";
+  color: aliceblue;
+}
+i {
+  font-size: 30px;
+  color: aliceblue;
+}
 
 /* ************* section Why-us ends here ************* */
 
@@ -508,7 +722,7 @@ footer{
 
 .main {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -565,15 +779,7 @@ footer{
       line-height: 26px;
       width: 50vw;
     }
-    /* }
-    img {
-      position: absolute;
-      padding: 5rem;
-      right: 1rem;
-      width: 40%;
-      height: 100%;
-      object-fit: contain;
-    } */
+
     button {
       left: 10;
       margin-top: 2rem;
@@ -584,6 +790,23 @@ footer{
       line-height: 20px;
       font-weight: 400;
       background-color: rgb(255, 73, 85);
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
+    button:hover {
+      cursor: pointer;
+      font-size: 25px;
+      border: 2px solid #ff4955;
+      color: aliceblue;
+      background-color: #0000;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
   }
 }
@@ -623,6 +846,132 @@ footer>.shop-div{
   color: aliceblue;
   font-size: 1.3vw;
 }
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; /* Added gap between columns */
+}
+
+.footer-img {
+  margin-right: 2rem; /* Added gap between the image and the columns */
+}
+
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+  margin: 1rem 0;
+}
+
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
+  font-size: 1.4vw;
+  color: aliceblue;
+  text-shadow: 1px 1px #ff4955;
+  margin-top: 1vw;
+}
+
+@media screen and (max-width: 620px) {
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-img > img {
+    width: 38vw;
+    height: 13vh;
+  }
+
+  .shop-div,
+  .company-div,
+  .support-div,
+  .contact-div {
+    margin: 9vw 0;
+    width: 88vw;
+  }
+
+  .shop-div > h1,
+  .company-div > h1,
+  .support-div > h1,
+  .contact-div > h1 {
+    font-size: 4.5vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+  }
+
+  .shop-div > ul > li > a,
+  .company-div > ul > li > a,
+  .support-div > ul > li > a,
+  .contact-div > ul > li > a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 3vw;
+  }
+
+  .shop-div > ul > li,
+  .company-div > ul > li,
+  .support-div > ul > li,
+  .contact-div > ul > li {
+    color: aliceblue;
+    font-size: 3vw;
+    list-style-type: none;
+    padding-top: 1.2vw;
+    margin-top: 0.7vw;
+  }
+
+  .shop-div > ul > h3,
+  .company-div > ul > h3,
+  .support-div > ul > h3,
+  .contact-div > ul > h3 {
+    font-size: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.15vw 0.15vw #ff4955;
+    margin-top: 3vw;
+  }
+}
+
+.footer-img > a > img {
+  width: 22vw;
+  height: 14vh;
+  gap: 2rem;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+  width: 100%;
+}
+
+.shop-div > h1,
+.company-div > h1,
+.support-div > h1,
+.contact-div > h1 {
+  font-size: 2.3vw;
+  color: #ff4955;
+  margin-bottom: 1vw;
+}
+
+.shop-div > ul > li > a,
+.company-div > ul > li > a,
+.support-div > ul > li > a,
+.contact-div > ul > li > a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3vw;
+}
+
 .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
   color: aliceblue;
   font-size: 1.3vw;
@@ -631,11 +980,32 @@ footer>.shop-div{
   margin-top: .7vw;
 }
 .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
+  font-size: 3.5vw;
+  color: aliceblue;
+  text-shadow: 0.15vw 0.15vw #ff4955;
+  margin-top: 3vw;}
+
+.shop-div > ul > li,
+.company-div > ul > li,
+.support-div > ul > li,
+.contact-div > ul > li {
+  color: aliceblue;
+  font-size: 1.3vw;
+  list-style-type: none;
+  padding-top: 0.7vw;
+  margin-top: 0.7vw;
+}
+
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
   font-size: 1.4vw;
   color: aliceblue;
   text-shadow: 1px 1px #FF4955;
   margin-top: 1vw;
 }
+
 
 @media screen and (max-width: 620px){
   footer{
@@ -683,6 +1053,275 @@ footer>.shop-div{
       text-shadow: .15vw .15vw #FF4955;
       margin-top: 3vw;
   }
+.contact-div ul li {
+  width: 100%;
+}
+}
+/* ************* section Footer ends here ************* */
+
+/* ************* section contact starts here ************* */
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.para {
+  width: 530px;
+  color: white;
+}
+.form {
+  width: 530px;
+}
+.Hamza {
+  font-size: 50px;
+}
+.hmza {
+  font-size: 20px;
+}
+.info p {
+  font-size: 20px;
+}
+.infoHead {
+  color: rgb(252, 55, 70);
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.p {
+  margin-bottom: 10px;
+}
+/* form starts*/
+.HAmza {
+  color: white;
+  font-size: 20px;
+}
+.HAMZA {
+  height: 50px;
+  width: 200px;
+}
+.emaill {
+  height: 50px;
+  width: 425px;
+}
+.button {
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  background-color: rgb(252, 55, 70);
+  color: white;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: red;
 }
 
-/* ************* section Footer ends here ************* */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem;
+  iframe {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+  }
+}
+/* ************* section contact ends here ************* */
+
+/* ************* section Responsiveness starts here ************* */
+
+@media screen and (max-width: 1024px) {
+  .AddressBar > p {
+    font-size: 2vw;
+    margin-left: 5vw;
+  }
+
+  .navbar > a > img {
+    width: 30vw;
+    margin-left: 5vw;
+  }
+
+  .navbar > ul {
+    margin-left: 5vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 2vw;
+    font-size: 3vw;
+  }
+
+  main .ad .text h1 {
+    width: 50vw;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  main .ad .text p {
+    width: 50vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 50px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 50px;
+    width: 50vw;
+  }
+
+  .pink-headphones .text p {
+    width: 50vw;
+  }
+
+  .why h1 {
+    font-size: 50px;
+    width: 50vw;
+  }
+
+  .main .text h1 {
+    font-size: 50px;
+    width: 70vw;
+  }
+
+  .main .text p {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AddressBar > p {
+    font-size: 3vw;
+    margin-left: 4vw;
+  }
+
+  .navbar > a > img {
+    width: 35vw;
+    margin-left: 4vw;
+  }
+
+  .navbar > ul {
+    margin-left: 4vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 1.5vw;
+    font-size: 4vw;
+  }
+
+  main .ad .text h1 {
+    width: 60vw;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  main .ad .text p {
+    width: 60vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 40px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 40px;
+    width: 60vw;
+  }
+
+  .pink-headphones .text p {
+    width: 60vw;
+  }
+
+  .why h1 {
+    font-size: 40px;
+    width: 60vw;
+  }
+
+  .main .text h1 {
+    font-size: 40px;
+    width: 80vw;
+  }
+
+  .main .text p {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AddressBar > p {
+    font-size: 4vw;
+    margin-left: 3vw;
+  }
+
+  .navbar > a > img {
+    width: 40vw;
+    margin-left: 3vw;
+  }
+
+  .navbar > ul {
+    margin-left: 3vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 1vw;
+    font-size: 5vw;
+  }
+
+  main .ad .text h1 {
+    width: 70vw;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  main .ad .text p {
+    width: 70vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 30px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .pink-headphones .text p {
+    width: 70vw;
+  }
+
+  .why h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .main .text h1 {
+    font-size: 30px;
+    width: 90vw;
+  }
+
+  .main .text p {
+    width: 90vw;
+  }
+}
+/* ************* section Responsiveness ends here ************* */

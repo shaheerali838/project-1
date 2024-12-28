@@ -1,20 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/bg_pic.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/bg_pic.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
-.AddressBar{
+.AddressBar {
+  width: 100%;
+  height: fit-content;
+  padding: 2vh;
+  background-color: #ff4955;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.AddressBar > p {
+  font-size: 1.15vw;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(219, 218, 224);
+  display: flex;
+  align-items: center;
+  margin-left: 12vw;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar > a > img {
+  width: 19vw;
+  height: fit-content;
+  margin-left: 9vw;
+  border-radius: 50%;
+}
+.navbar > ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 8vw;
+}
+.navbar > ul > li {
+  margin-left: 6vw;
+  font-size: 1.7vw;
+  font-family: "league gothic";
+}
+.navbar > ul > li > a:hover {
+  color: #ff4955;
+  transition: 0.6s;
+}
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: rgb(219, 218, 224);
+}
+@media screen and (max-width: 620px) {
+  .AddressBar {
     width: 100%;
     height: fit-content;
-    padding: 2vh;
-    background-color: #FF4955;
+    padding: 1vh;
+    background-color: #ff4955;
     display: flex;
     position: relative;
     top: 0;
@@ -23,17 +79,22 @@ body{
 .AddressBar>p{
     font-size: 1.5vw;
     font-family: "league gothic";
+  }
+  .AddressBar > p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(219, 218, 224);
     display: flex;
     align-items: center;
     margin-left: 12vw;
-}
-.navbar{
+  }
+  .navbar {
     display: flex;
     position: sticky;
     top: 0;
     left: 0;
-    display: flex;
+    display: block;
     align-items: center;
     width: 100%;
     height: fit-content;
@@ -42,286 +103,314 @@ body{
 .navbar>a>img{
     width: 19vw;
     height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .navbar > a > img {
+    width: 38vw;
+    height: 18vw;
     margin-left: 9vw;
     border-radius: 50%;
-}
-.navbar>ul{
-    display: flex;
+  }
+  .navbar > ul {
+    display: block;
     list-style-type: none;
     margin-left: 8vw;
+  }
+  .navbar > ul > li {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.3vw;
+    padding: 1vw 0vw;
+  }
 }
-.navbar>ul>li{
-    margin-left: 6vw;
-    font-size: 1.7vw;
-    font-family: "league gothic";
+
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4vw;
+  margin-top: 13vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
 }
-.navbar>ul>li>a:hover{
-    color: #FF4955;
-    transition: .6s;
+
+.footer-img > a > img {
+  width: 22vw;
+  height: 14vh;
 }
-.navbar>ul>li>a{
-    text-decoration: none;
-    color: rgb(219, 218, 224);
+footer > .shop-div {
+  margin-left: 6vw;
 }
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+  margin-left: 6vw;
+}
+.shop-div > h1,
+.company-div > h1,
+.support-div > h1,
+.contact-div > h1 {
+  font-size: 2.3vw;
+  color: #ff4955;
+  margin-bottom: 1vw;
+}
+.shop-div > ul > li > a,
+.company-div > ul > li > a,
+.support-div > ul > li > a,
+.contact-div > ul > li > a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3vw;
+}
+.shop-div > ul > li,
+.company-div > ul > li,
+.support-div > ul > li,
+.contact-div > ul > li {
+  color: aliceblue;
+  font-size: 1.3vw;
+  list-style-type: none;
+  padding-top: 0.7vw;
+  margin-top: 0.7vw;
+}
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
+  font-size: 1.4vw;
+  color: aliceblue;
+  text-shadow: 1px 1px #ff4955;
+  margin-top: 1vw;
+}
+
 @media screen and (max-width: 620px) {
-    .AddressBar{
-        width: 100%;
-        height: fit-content;
-        padding: 1vh;
-        background-color: #FF4955;
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    .AddressBar>p{
-        font-size: 1.4vw;
-        font-weight: 600;
-        font-family: "league gothic";
-        color: rgb(219, 218, 224);
-        display: flex;
-        align-items: center;
-        margin-left: 12vw;
-    }
-    .navbar{
-        display: flex;
-        position: sticky;
-        top: 0;
-        left: 0;
-        display: block;
-        align-items: center;
-        width: 100%;
-        height: fit-content;
-        background-color: rgba(0,0,0,0.2);
-        text-align: center;
-    }
-    .navbar>a>img{
-        width: 38vw;
-        height: 18vw;
-        margin-left: 9vw;
-        border-radius: 50%;
-    }
-    .navbar>ul{
-        display: block;
-        list-style-type: none;
-        margin-left: 8vw;
-    }
-    .navbar>ul>li{
-        font-size: 3vw;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        background-color: rgba(0,0,0,0.2);
-        margin: .3vw;
-        padding: 1vw 0vw;
-    }   
-}
 
 
-
-
-footer{
+  footer {
     width: 100%;
     height: fit-content;
     padding: 4vw;
-    margin-top: 13vh;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     bottom: 0;
     left: 0;
-    display: flex;
-}
-
-.footer-img>a>img{
-    width: 22vw;
-    height: 14vh;
-}
-footer>.shop-div{
-    margin-left: 6vw;
-}
-.shop-div,.company-div,.support-div,.contact-div{
-    margin-left: 6vw;
-}
-.shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-    font-size: 2.3vw;
-    color: #FF4955;
-    margin-bottom: 1vw;
-}
-.shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1.3vw;
-}
-.shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-    color: aliceblue;
-    font-size: 1.3vw;
-    list-style-type: none;
-    padding-top: .7vw;
-    margin-top: .7vw;
-}
-.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-    font-size: 1.4vw;
-    color: aliceblue;
-    text-shadow: 1px 1px #FF4955;
-    margin-top: 1vw;
-}
-
-@media screen and (max-width: 620px){
-    footer{
-        width: 100%;
-        height: fit-content;
-        padding: 4vw;
-        background-color: rgba(0,0,0,0.6);
-        position: relative;
-        bottom: 0;
-        left: 0;
-        display: block;
-        text-align: center;
-    }
-    
-    .footer-img>img{
-        width: 38vw;
-        height: 13vh;
-    }
-    footer>.shop-div{
-        margin-left: 6vw;
-    }
-    .shop-div,.company-div,.support-div,.contact-div{
-        margin: 9vw 0vw 0vw 6vw;
-    }
-    .shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-        font-size: 4.5vw;
-        color: #FF4955;
-        margin-bottom: 1vw;
-    }
-    .shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-        text-decoration: none;
-        color: #f0f8ff;
-        font-size: 3vw;
-    }
-    .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-        color: aliceblue;
-        font-size: 3vw;
-        list-style-type: none;
-        padding-top: 1.2vw;
-        margin-top: .7vw;
-    }
-    .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-        font-size: 3.5vw;
-        color: aliceblue;
-        text-shadow: .15vw .15vw #FF4955;
-        margin-top: 3vw;
-    }
-}
-
-
-
-
-
-
-
-.Collection_content{
+    display: block;
     text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-}
-.Collection_content>h1{
-    color: #f0f8ff;
-    font-size: 6vw;
-    font-family:league gothic;
-}
-.Collection_content>p{
-    color: #f0f8ff;
-    font-size: 1.4vw;
-}
-.Collection_content>p>a{
+  }
+
+  .footer-img > img {
+    width: 38vw;
+    height: 13vh;
+  }
+  footer > .shop-div {
+    margin-left: 6vw;
+  }
+  .shop-div,
+  .company-div,
+  .support-div,
+  .contact-div {
+    margin: 9vw 0vw 0vw 6vw;
+  }
+  .shop-div > h1,
+  .company-div > h1,
+  .support-div > h1,
+  .contact-div > h1 {
+    font-size: 4.5vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+  }
+  .shop-div > ul > li > a,
+  .company-div > ul > li > a,
+  .support-div > ul > li > a,
+  .contact-div > ul > li > a {
     text-decoration: none;
-    color: #FF4955;
+    color: #f0f8ff;
+    font-size: 3vw;
+  }
+  .shop-div > ul > li,
+  .company-div > ul > li,
+  .support-div > ul > li,
+  .contact-div > ul > li {
+    color: aliceblue;
+    font-size: 3vw;
+    list-style-type: none;
+    padding-top: 1.2vw;
+    margin-top: 0.7vw;
+  }
+  .shop-div > ul > h3,
+  .company-div > ul > h3,
+  .support-div > ul > h3,
+  .contact-div > ul > h3 {
+    font-size: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.15vw 0.15vw #ff4955;
+    margin-top: 3vw;
+  }
 }
-.Collection-Cards{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,.1fr);
-    row-gap: 6vw;
-    column-gap: 2vw;
+
+
+
+
+.Collection_content {
+  text-align: center;
+  padding: 5vw 0vw 5vw 0vw;
+}
+.Collection_content > h1 {
+  color: #f0f8ff;
+  font-size: 6vw;
+  font-family: "league gothic";
+}
+.Collection_content > p {
+  color: #f0f8ff;
+  font-size: 1.4vw;
+}
+.Collection_content > p > a {
+  text-decoration: none;
+  color: #ff4955;
+}
+.Collection-Cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  row-gap: 6vw;
+  column-gap: 2vw;
   padding: 4vw 0vw 4vw 2vw;
 }
-.Home_Appliances, .Home_Appliances>img, .Cloths, .Cloths>img, .Shoes, .Shoes>img, .Furniture, .Furniture>img, .Cosmetics, .Cosmetics>img,.Jewellery, .Jewellery>img{
+.Home_Appliances,
+.Home_Appliances > img,
+.Cloths,
+.Cloths > img,
+.Shoes,
+.Shoes > img,
+.Furniture,
+.Furniture > img,
+.Cosmetics,
+.Cosmetics > img,
+.Jewellery,
+.Jewellery > img {
+  width: 30vw;
+  object-fit: cover;
+  aspect-ratio: 1;
+  height: 65vh;
+  border: 1px solid #ff4955;
+}
+
+.collection_name > h1 {
+  font-size: 2.4vw;
+  width: 25vw;
+  text-align: center;
+  height: fit-content;
+  padding: 1vw;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff4955;
+  margin: 3vh 0vw 0vh 2vw;
+  font-family: "league gothic";
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.collection_name > a > div > button {
+  margin: 45vh 0vw 0vh 9vw;
+  font-size: 2vw;
+  color: #ffffff;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px #ff4955;
+  padding: 0.5vw;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.collection_name > h1:hover {
+  color: #ff4955;
+  text-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+.collection_name> a > div:hover  button {
+  background-color: #ff4955;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px black;
+}
+
+button:active {
+  transform: scale(0.8);
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 920px) {
+  .Collection_content > h1 {
+    color: #f0f8ff;
+    font-size: 4vw;
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  .Collection_content > p {
+    color: #f0f8ff;
+    font-size: 1.8vw;
+  }
+  .Collection-Cards {
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+  .Home_Appliances,
+  .Home_Appliances > img,
+  .Cloths,
+  .Cloths > img,
+  .Shoes,
+  .Shoes > img,
+  .Furniture,
+  .Furniture > img,
+  .Cosmetics,
+  .Cosmetics > img,
+  .Jewellery,
+  .Jewellery > img {
+    width: 47vw;
+    height: 40vh;
+  }
+
+  .collection_name > h1 {
+    margin: 3vh 0vw 0vh 8vw;
+    font-size: 3.3vw;
     width: 30vw;
-    height: 65vh;
-    border:2px solid;
+  }
+  .collection_name > div > a > button {
+    margin: 33vh 0vw 0vh 17vw;
+  }
 }
 
-.collection_name>h1{
-    font-size: 2.4vw;
-    width: 20vw;
-    text-align: center;
-    height: fit-content;
-    padding: 1vw;
-    color:#ffffff;
-    text-shadow: 2px 2px #FF4955;
-    margin: 3vh 0vw 0vh 5vw;
-}
-.collection_name>div>a>button{
-    margin: 45vh 0vw 0vh 9vw ;
-    font-size: 2vw;
-    color: #ffffff;
-    border: none;
-    background-color: rgba(0,0,0,0.7);
-    text-shadow: 1px 1px #FF4955;
-    padding: .5vw;
-}
-.collection_name>div>a>button:hover{
-    background-color: #FF4955;
-    box-shadow: 2px 2px 2px  black;
-    text-shadow: 1px 1px black;
-}
-button:active{
-    transform: scale(.8);
-    transition: .7s;
-}
-@media screen and (max-width: 920px)  {
-    .Collection_content>h1{
-        color: #f0f8ff;
-        font-size: 4vw;
-        font-family:Georgia, Times, 'Times New Roman', serif;
-    }
-    .Collection_content>p{
-        color: #f0f8ff;
-        font-size: 1.8vw;
-    }
-    .Collection-Cards{
-        grid-template-columns: repeat(2,.1fr);
-    }
-    .Home_Appliances, .Home_Appliances>img, .Cloths, .Cloths>img, .Shoes, .Shoes>img, .Furniture, .Furniture>img, .Cosmetics, .Cosmetics>img,.Jewellery, .Jewellery>img{
-        width: 47vw;
-        height: 40vh;
-    }
-    
-    .collection_name>h1{
-        margin: 3vh 0vw 0vh 8vw;
-        font-size: 3.3vw;
-        width: 30vw;
-    }
-    .collection_name>div>a>button{
-        margin: 33vh 0vw 0vh 17vw ;
-    }
-}
+@media screen and (max-width: 480px) {
+  .Collection-Cards {
+    grid-template-columns: repeat(1, 0.1fr);
+    margin-left: 4vw;
+  }
+  .Home_Appliances,
+  .Home_Appliances > img,
+  .Cloths,
+  .Cloths > img,
+  .Shoes,
+  .Shoes > img,
+  .Furniture,
+  .Furniture > img,
+  .Cosmetics,
+  .Cosmetics > img,
+  .Jewellery,
+  .Jewellery > img {
+    width: 92vw;
+  }
 
-@media screen and (max-width: 480px)  {
-    .Collection-Cards{
-        grid-template-columns: repeat(1,.1fr);
-        margin-left: 4vw;
-    }
-    .Home_Appliances, .Home_Appliances>img, .Cloths, .Cloths>img, .Shoes, .Shoes>img, .Furniture, .Furniture>img, .Cosmetics, .Cosmetics>img,.Jewellery, .Jewellery>img{
-        width: 92vw;
-    }
-    
-    .collection_name>h1{
-        margin: 3vh 0vw 0vh 12vw;
-        font-size:8vw;
-        width: 70vw;
-    }
-    .collection_name>div>a>button{
-        margin: 32vh 0vw 0vh 32vw ;
-        font-size: 6vw;
-    }
+  .collection_name > h1 {
+    margin: 3vh 0vw 0vh 12vw;
+    font-size: 8vw;
+    width: 70vw;
+  }
+  .collection_name > div > a > button {
+    margin: 32vh 0vw 0vh 32vw;
+    font-size: 6vw;
+  }
 }
