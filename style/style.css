@@ -10,7 +10,6 @@
 body {
   background-color: black !important;
   background-size: cover;
-  background-attachment: fixed;
 }
 /* ************* section Header starts here ************* */
 button {
@@ -23,6 +22,7 @@ h1 {
 .AddressBar {
   width: 100vw;
 
+  font-family: "league gothic";
   height: fit-content;
   padding: 2vh;
   background-color: #ff4955;
@@ -32,6 +32,7 @@ h1 {
   left: 0;
 }
 .AddressBar > p {
+  font-family: "league gothic";
   font-size: 1.15vw;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,6 +52,7 @@ h1 {
   width: 100vw;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.2);
+  font-family: "league gothic";
 }
 .navbar > a > img {
   width: 22vw;
@@ -59,6 +61,7 @@ h1 {
   border-radius: 50%;
 }
 .navbar > ul {
+  font-family: "league gothic";
   display: flex;
   list-style-type: none;
   margin-left: 8vw;
@@ -67,7 +70,9 @@ h1 {
   margin-left: 4vw;
   font-size: 1.4vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "league gothic";
 }
 .navbar > ul > li > a:hover {
   color: #ff4955;
@@ -332,56 +337,56 @@ main {
 }
 
 @media screen and (max-width: 620px) {
-    .AddressBar{
-        width: 100%;
-        height: fit-content;
-        padding: 1vh;
-        background-color: #FF4955;
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    .AddressBar>p{
-        font-size: 1.4vw;
-        font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(219, 218, 224);
-        display: flex;
-        align-items: center;
-        margin-left: 12vw;
-    }
-    .navbar{
-        display: flex;
-        position: sticky;
-        top: 0;
-        left: 0;
-        display: block;
-        align-items: center;
-        width: 100%;
-        height: fit-content;
-        background-color: rgba(0,0,0,0.2);
-        text-align: center;
-    }
-    .navbar>img{
-        width: 38vw;
-        height: 18vw;
-        margin-left: 9vw;
-        border-radius: 50%;
-    }
-    .navbar>ul{
-        display: block;
-        list-style-type: none;
-        margin-left: 8vw;
-    }
-    .navbar>ul>li{
-        font-size: 3vw;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        background-color: rgba(0,0,0,0.2);
-        margin: .3vw;
-        padding: 1vw 0vw;
-    }   
+  .AddressBar {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .AddressBar > p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+  }
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .navbar > img {
+    width: 38vw;
+    height: 18vw;
+    margin-left: 9vw;
+    border-radius: 50%;
+  }
+  .navbar > ul {
+    display: block;
+    list-style-type: none;
+    margin-left: 8vw;
+  }
+  .navbar > ul > li {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.3vw;
+    padding: 1vw 0vw;
+  }
 }
 
 /* ************* section Pink-Headphones ends here ************* */
@@ -394,65 +399,64 @@ main {
   margin: 2rem;
   justify-content: space-between;
 }
-  .why {
-    h2 {
-      font-family: "Kaushan Script";
-      font-size: 30px;
-      line-height: 36px;
+.why {
+  h2 {
+    font-family: "Kaushan Script";
+    font-size: 30px;
+    line-height: 36px;
+    color: #ff4955;
+  }
+  h1 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 78px;
+    line-height: 62px;
+    width: 35vw;
+    font-weight: 400;
+    font-family: "league gothic";
+    span {
       color: #ff4955;
     }
-    h1 {
-      margin-top: 1rem;
-      text-transform: uppercase;
-      color: aliceblue;
-      font-size: 78px;
-      line-height: 62px;
-      width: 35vw;
-      font-weight: 400;
-      font-family: "league gothic";
-      span {
-        color: #ff4955;
-      }
-    }
   }
-  .reasons {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-
-  }
-
-
-footer{
-    width: 100%;
-    height: fit-content;
-    padding: 4vw;
-    background-color: rgba(0,0,0,0.6);
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: flex;
 }
-    .plates {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem;}
-      h2 {
-        font-family: "league gothic";
-        color: aliceblue;
-        font-size: 24px;
-        line-height: 29px;
-        font-weight: 400;
-        margin: 1rem 0 1rem 0;
-      }
-      p {
-        font-family: "Manrope";
-        color: aliceblue;
-      }
-      i {
-        font-size: 30px;
-        color: aliceblue;
-      }
+.reasons {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.plates {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+h2 {
+  font-family: "league gothic";
+  color: aliceblue;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  margin: 1rem 0 1rem 0;
+}
+p {
+  font-family: "Manrope";
+  color: aliceblue;
+}
+i {
+  font-size: 30px;
+  color: aliceblue;
+}
 
 /* ************* section Why-us ends here ************* */
 
@@ -517,15 +521,7 @@ footer{
       line-height: 26px;
       width: 50vw;
     }
-    /* }
-    img {
-      position: absolute;
-      padding: 5rem;
-      right: 1rem;
-      width: 40%;
-      height: 100%;
-      object-fit: contain;
-    } */
+
     button {
       left: 10;
       margin-top: 2rem;
@@ -536,6 +532,23 @@ footer{
       line-height: 20px;
       font-weight: 400;
       background-color: rgb(255, 73, 85);
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
+    button:hover {
+      cursor: pointer;
+      font-size: 25px;
+      border: 2px solid #ff4955;
+      color: aliceblue;
+      background-color: #0000;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
   }
 }
@@ -544,73 +557,86 @@ footer{
 /* ************* section Footer starts here ************* */
 
 footer {
-  /* margin-top: 5rem; */
   width: 100vw;
   height: fit-content;
   padding: 4vw;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
-      url(../Images/bg_pic.jpg);
-    background-size: cover; */
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   bottom: 0;
   left: 0;
   display: flex;
-  /* background-image: url(../Images/bg_pic.jpg); */
 }
-.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-    font-size: 1.4vw;
-    color: aliceblue;
-    text-shadow: 1px 1px #FF4955;
-    margin-top: 1vw;
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
+  font-size: 1.4vw;
+  color: aliceblue;
+  text-shadow: 1px 1px #ff4955;
+  margin-top: 1vw;
 }
 
-@media screen and (max-width: 620px){
-    footer{
-        width: 100%;
-        height: fit-content;
-        padding: 4vw;
-        background-color: rgba(0,0,0,0.6);
-        position: relative;
-        bottom: 0;
-        left: 0;
-        display: block;
-        text-align: center;
-    }
-    
-    .footer-img>img{
-        width: 38vw;
-        height: 13vh;
-    }
-    footer>.shop-div{
-        margin-left: 6vw;
-    }
-    .shop-div,.company-div,.support-div,.contact-div{
-        margin: 9vw 0vw 0vw 6vw;
-    }
-    .shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-        font-size: 4.5vw;
-        color: #FF4955;
-        margin-bottom: 1vw;
-    }
-    .shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-        text-decoration: none;
-        color: #f0f8ff;
-        font-size: 3vw;
-    }
-    .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-        color: aliceblue;
-        font-size: 3vw;
-        list-style-type: none;
-        padding-top: 1.2vw;
-        margin-top: .7vw;
-    }
-    .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-        font-size: 3.5vw;
-        color: aliceblue;
-        text-shadow: .15vw .15vw #FF4955;
-        margin-top: 3vw;
-    }
+@media screen and (max-width: 620px) {
+  footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-img > img {
+    width: 38vw;
+    height: 13vh;
+  }
+  footer > .shop-div {
+    margin-left: 6vw;
+  }
+  .shop-div,
+  .company-div,
+  .support-div,
+  .contact-div {
+    margin: 9vw 0vw 0vw 6vw;
+  }
+  .shop-div > h1,
+  .company-div > h1,
+  .support-div > h1,
+  .contact-div > h1 {
+    font-size: 4.5vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+  }
+  .shop-div > ul > li > a,
+  .company-div > ul > li > a,
+  .support-div > ul > li > a,
+  .contact-div > ul > li > a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 3vw;
+  }
+  .shop-div > ul > li,
+  .company-div > ul > li,
+  .support-div > ul > li,
+  .contact-div > ul > li {
+    color: aliceblue;
+    font-size: 3vw;
+    list-style-type: none;
+    padding-top: 1.2vw;
+    margin-top: 0.7vw;
+  }
+  .shop-div > ul > h3,
+  .company-div > ul > h3,
+  .support-div > ul > h3,
+  .contact-div > ul > h3 {
+    font-size: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.15vw 0.15vw #ff4955;
+    margin-top: 3vw;
+  }
 }
 
 .footer-img > a > img {
