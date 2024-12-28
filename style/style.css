@@ -729,13 +729,20 @@ h1 {
 .button:hover {
   background-color: red;
 }
-iframe {
+
+.container {
   display: flex;
   justify-content: center;
-  height: 400px;
+  flex-direction: column;
   width: 100%;
+  padding: 3rem;
+  iframe {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+  }
 }
-
 /* ************* section contact ends here ************* */
 
 /* ************* section Responsiveness starts here ************* */
