@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
 body {
   background-color: black !important;
   background-size: cover;
@@ -20,7 +21,7 @@ h1 {
   font-family: "league gothic";
 }
 .AddressBar {
-  width: 100vw;
+  width: 100%;
 
   font-family: "league gothic";
   height: fit-content;
@@ -49,7 +50,7 @@ h1 {
   left: 0;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: "league gothic";
@@ -93,7 +94,7 @@ h1 {
 
 main {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -106,7 +107,7 @@ main {
     position: relative;
     display: inline-block;
     /* margin: 10rem; */
-    width: 100vw;
+    width: 100%;
     height: 100%;
     .text {
       padding: 5rem;
@@ -256,11 +257,11 @@ main {
 /* ************* section Pink-Headphones starts here ************* */
 
 .pink-headphones {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 5rem;
-  margin: 2rem;
+  /* margin: 2rem; */
   .text {
     display: flex;
     flex-direction: column;
@@ -396,7 +397,7 @@ main {
   height: 100vh;
   display: flex;
   padding: 2rem;
-  margin: 2rem;
+  /* margin: 2rem; */
   justify-content: space-between;
 }
 .why {
@@ -464,7 +465,7 @@ i {
 
 .main {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -557,7 +558,7 @@ i {
 /* ************* section Footer starts here ************* */
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   padding: 4vw;
   background-color: rgba(0, 0, 0, 0.6);
