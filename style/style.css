@@ -7,12 +7,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   background-color: black !important;
   background-size: cover;
+  /* font-size: 62.5%; */
 }
+
 /* ************* section Header starts here ************* */
+
 button {
   font-family: "league gothic";
 }
@@ -46,6 +50,7 @@ h1 {
 .navbar {
   display: flex;
   position: sticky;
+  flex-wrap: wrap;
   top: 0;
   left: 0;
   display: flex;
@@ -60,12 +65,17 @@ h1 {
   height: fit-content;
   margin-left: 9vw;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .navbar > ul {
   font-family: "league gothic";
   display: flex;
   list-style-type: none;
   margin-left: 8vw;
+  flex-wrap: wrap;
 }
 .navbar > ul > li {
   margin-left: 4vw;
@@ -257,11 +267,11 @@ main {
 /* ************* section Pink-Headphones starts here ************* */
 
 .pink-headphones {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  /* margin: 2rem; */
+  /* padding: 10rem; */
+  margin-right: 2rem;
   .text {
     display: flex;
     flex-direction: column;
@@ -323,7 +333,8 @@ main {
     .img1 {
       position: relative;
       img {
-        height: 90vh;
+        /* padding-right: 10rem; */
+        height: 90%;
       }
       .img2 {
         img {
@@ -334,59 +345,6 @@ main {
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .AddressBar {
-    width: 100%;
-    height: fit-content;
-    padding: 1vh;
-    background-color: #ff4955;
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .AddressBar > p {
-    font-size: 1.4vw;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(219, 218, 224);
-    display: flex;
-    align-items: center;
-    margin-left: 12vw;
-  }
-  .navbar {
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: block;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  .navbar > img {
-    width: 38vw;
-    height: 18vw;
-    margin-left: 9vw;
-    border-radius: 50%;
-  }
-  .navbar > ul {
-    display: block;
-    list-style-type: none;
-    margin-left: 8vw;
-  }
-  .navbar > ul > li {
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0.3vw;
-    padding: 1vw 0vw;
   }
 }
 
@@ -556,7 +514,6 @@ i {
 /* ************* section Testimonials ends here ************* */
 
 /* ************* section Footer starts here ************* */
-
 footer {
   width: 100%;
   height: fit-content;
@@ -565,8 +522,22 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; /* Added gap between columns */
 }
+
+.footer-img {
+  margin-right: 2rem; /* Added gap between the image and the columns */
+}
+
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+  margin: 1rem 0;
+}
+
 .shop-div > ul > h3,
 .company-div > ul > h3,
 .support-div > ul > h3,
@@ -579,14 +550,7 @@ footer {
 
 @media screen and (max-width: 620px) {
   footer {
-    width: 100%;
-    height: fit-content;
-    padding: 4vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: block;
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -594,15 +558,15 @@ footer {
     width: 38vw;
     height: 13vh;
   }
-  footer > .shop-div {
-    margin-left: 6vw;
-  }
+
   .shop-div,
   .company-div,
   .support-div,
   .contact-div {
-    margin: 9vw 0vw 0vw 6vw;
+    margin: 9vw 0;
+    width: 88vw;
   }
+
   .shop-div > h1,
   .company-div > h1,
   .support-div > h1,
@@ -611,6 +575,7 @@ footer {
     color: #ff4955;
     margin-bottom: 1vw;
   }
+
   .shop-div > ul > li > a,
   .company-div > ul > li > a,
   .support-div > ul > li > a,
@@ -619,6 +584,7 @@ footer {
     color: #f0f8ff;
     font-size: 3vw;
   }
+
   .shop-div > ul > li,
   .company-div > ul > li,
   .support-div > ul > li,
@@ -629,6 +595,7 @@ footer {
     padding-top: 1.2vw;
     margin-top: 0.7vw;
   }
+
   .shop-div > ul > h3,
   .company-div > ul > h3,
   .support-div > ul > h3,
@@ -643,37 +610,36 @@ footer {
 .footer-img > a > img {
   width: 22vw;
   height: 14vh;
+  gap: 2rem;
   object-fit: cover;
   aspect-ratio: 1;
 }
-footer > .shop-div {
-  margin-left: 6vw;
-}
+
 .shop-div,
 .company-div,
 .support-div,
 .contact-div {
-  margin-left: 6vw;
-  width: 20vw;
+  width: 100%;
 }
+
 .shop-div > h1,
 .company-div > h1,
 .support-div > h1,
 .contact-div > h1 {
   font-size: 2.3vw;
-  width: 5vw;
   color: #ff4955;
   margin-bottom: 1vw;
 }
+
 .shop-div > ul > li > a,
 .company-div > ul > li > a,
 .support-div > ul > li > a,
 .contact-div > ul > li > a {
   text-decoration: none;
-  width: 10vw;
   color: aliceblue;
   font-size: 1.3vw;
 }
+
 .shop-div > ul > li,
 .company-div > ul > li,
 .support-div > ul > li,
@@ -683,13 +649,12 @@ footer > .shop-div {
   list-style-type: none;
   padding-top: 0.7vw;
   margin-top: 0.7vw;
-  width: 10vw;
 }
+
 .shop-div > ul > h3,
 .company-div > ul > h3,
 .support-div > ul > h3,
 .contact-div > ul > h3 {
-  width: 10vw;
   font-size: 1.4vw;
   color: aliceblue;
   text-shadow: 1px 1px 3px #ff4955;
@@ -697,7 +662,267 @@ footer > .shop-div {
 }
 
 .contact-div ul li {
-  width: 20vw;
+  width: 100%;
 }
 
 /* ************* section Footer ends here ************* */
+
+/* ************* section contact starts here ************* */
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.para {
+  width: 530px;
+  color: white;
+}
+.form {
+  width: 530px;
+}
+.Hamza {
+  font-size: 50px;
+}
+.hmza {
+  font-size: 20px;
+}
+.info p {
+  font-size: 20px;
+}
+.infoHead {
+  color: rgb(252, 55, 70);
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.p {
+  margin-bottom: 10px;
+}
+/* form starts*/
+.HAmza {
+  color: white;
+  font-size: 20px;
+}
+.HAMZA {
+  height: 50px;
+  width: 200px;
+}
+.emaill {
+  height: 50px;
+  width: 425px;
+}
+.button {
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  background-color: rgb(252, 55, 70);
+  color: white;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: red;
+}
+iframe {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
+
+/* ************* section contact ends here ************* */
+
+/* ************* section Responsiveness starts here ************* */
+
+@media screen and (max-width: 1024px) {
+  .AddressBar > p {
+    font-size: 2vw;
+    margin-left: 5vw;
+  }
+
+  .navbar > a > img {
+    width: 30vw;
+    margin-left: 5vw;
+  }
+
+  .navbar > ul {
+    margin-left: 5vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 2vw;
+    font-size: 3vw;
+  }
+
+  main .ad .text h1 {
+    width: 50vw;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  main .ad .text p {
+    width: 50vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 50px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 50px;
+    width: 50vw;
+  }
+
+  .pink-headphones .text p {
+    width: 50vw;
+  }
+
+  .why h1 {
+    font-size: 50px;
+    width: 50vw;
+  }
+
+  .main .text h1 {
+    font-size: 50px;
+    width: 70vw;
+  }
+
+  .main .text p {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AddressBar > p {
+    font-size: 3vw;
+    margin-left: 4vw;
+  }
+
+  .navbar > a > img {
+    width: 35vw;
+    margin-left: 4vw;
+  }
+
+  .navbar > ul {
+    margin-left: 4vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 1.5vw;
+    font-size: 4vw;
+  }
+
+  main .ad .text h1 {
+    width: 60vw;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  main .ad .text p {
+    width: 60vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 40px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 40px;
+    width: 60vw;
+  }
+
+  .pink-headphones .text p {
+    width: 60vw;
+  }
+
+  .why h1 {
+    font-size: 40px;
+    width: 60vw;
+  }
+
+  .main .text h1 {
+    font-size: 40px;
+    width: 80vw;
+  }
+
+  .main .text p {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AddressBar > p {
+    font-size: 4vw;
+    margin-left: 3vw;
+  }
+
+  .navbar > a > img {
+    width: 40vw;
+    margin-left: 3vw;
+  }
+
+  .navbar > ul {
+    margin-left: 3vw;
+  }
+
+  .navbar > ul > li {
+    margin-left: 1vw;
+    font-size: 5vw;
+  }
+
+  main .ad .text h1 {
+    width: 70vw;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  main .ad .text p {
+    width: 70vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 30px;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .pink-headphones .text p {
+    width: 70vw;
+  }
+
+  .why h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .main .text h1 {
+    font-size: 30px;
+    width: 90vw;
+  }
+
+  .main .text p {
+    width: 90vw;
+  }
+}
+/* ************* section Responsiveness ends here ************* */
