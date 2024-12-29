@@ -46,11 +46,9 @@ body {
 }
 
 .navbar>a>img {
-  width: 19vw;
+  width: 27vw;
   height: fit-content;
-  margin-left: 9vw;
-  border-radius: 50%;
-  aspect-ratio: 1;
+  margin-left: 7vw;
   object-fit: cover;
 }
 

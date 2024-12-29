@@ -379,7 +379,7 @@ button:active {
   .Collection_content>h1 {
     color: #f0f8ff;
     font-size: 4vw;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: "league gothic";
   }
 
   .Collection_content>p {
@@ -413,7 +413,7 @@ button:active {
     width: 30vw;
   }
 
-  .collection_name>div>a>button {
+  .collection_name>a>div>button {
     margin: 33vh 0vw 0vh 17vw;
   }
 }
@@ -445,7 +445,7 @@ button:active {
     width: 70vw;
   }
 
-  .collection_name>div>a>button {
+  .collection_name>a>div>button {
     margin: 32vh 0vw 0vh 32vw;
     font-size: 6vw;
   }
