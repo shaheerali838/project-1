@@ -622,7 +622,8 @@ main {
 .pink-headphones {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
   padding: 5rem;
   margin-top: 2rem;
 
@@ -690,22 +691,23 @@ main {
 
   .pics {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 10rem;
 
     .img1 {
       position: relative;
 
       img {
         /* position: absolute; */
-        height: 200%;
+        width: 400px;
       }
 
       .img2 {
         img {
           position: absolute;
-          top: 3vh;
-          height: 30vh;
-          left: -10vw;
+          top: 2rem;
+          left: -4rem;
+          width: 100px;
         }
       }
     }
@@ -721,6 +723,7 @@ main {
   padding: 2rem;
   /* margin: 2rem; */
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .why {
@@ -1310,6 +1313,8 @@ h1 {
     width: 50vw;
   }
 
+
+
   .product-cards .text h1 {
     font-size: 50px;
   }
@@ -1372,12 +1377,16 @@ h1 {
     width: 60vw;
   }
 
+  .product-cards {
+    flex-wrap: wrap;
+  }
+
   .product-cards .text h1 {
     font-size: 40px;
   }
 
   .product-cards .cards {
-    grid-template-columns: auto;
+    display: block;
   }
 
   .pink-headphones .text h1 {
@@ -1387,6 +1396,43 @@ h1 {
 
   .pink-headphones .text p {
     width: 60vw;
+  }
+
+  .product-cards .text h1 {
+    font-size: 30px;
+  }
+
+  .product-cards .cards {
+    display: block;
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .pink-headphones .text p {
+    width: 70vw;
+  }
+
+  .pink-headphones .pics img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones .pics .img1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones .pics .img1 .img2 img {
+    width: 100%;
+    height: auto;
   }
 
   .why h1 {
@@ -1438,8 +1484,21 @@ h1 {
     font-size: 30px;
   }
 
+  .product-cards {
+    flex-wrap: wrap;
+  }
+
   .product-cards .cards {
     grid-template-columns: auto;
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    flex-direction: column;
   }
 
   .pink-headphones .text h1 {
@@ -1449,6 +1508,22 @@ h1 {
 
   .pink-headphones .text p {
     width: 70vw;
+  }
+
+  .pink-headphones .pics img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones .pics .img1 img {
+    width: 250%;
+    margin: auto;
+    height: auto;
+  }
+
+  .pink-headphones .pics .img1 .img2 img {
+    width: 100%;
+    height: auto;
   }
 
   .why h1 {
