@@ -1188,6 +1188,120 @@ footer {
 
 /* ************* section Footer ends here ************* */
 
+/* ************* section Cart page starts here ************* */
+
+.Cart-Page {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  /* Lighter border for the container */
+  border-radius: 8px;
+  /* Slight rounding for a modern card look */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: aliceblue;
+  /* Text color */
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+  color: aliceblue;
+  /* Text color */
+}
+
+td input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  /* Subtle border for inputs */
+  border-radius: 4px;
+  color: aliceblue;
+  /* Text color */
+  background-color: transparent;
+}
+
+td a {
+  font-size: 14px;
+  text-decoration: none;
+  color: aliceblue;
+  /* Text color */
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.total-price table {
+  border: 1px solid #e0e0e0;
+  /* Lighter border for the total price table */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 370px;
+}
+
+button {
+  background-color: #ff4955;
+  border: 1px solid transparent;
+  /* Transparent border for clean look */
+  color: aliceblue;
+  /* Text color */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+/* Horizontal lines at the end of each cart item */
+tr:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+  /* Light border after each item row */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  /* Light horizontal line */
+  margin: 20px 0;
+}
+
+
+/* ************* section Cart page ends here ************* */
+
 /* ************* section contact starts here ************* */
 
 h1 {
