@@ -10,7 +10,8 @@
 
 html,
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/bg_pic.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../Images/bg_pic.jpg);
   /* background-color: black !important; */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../Images/bg_pic.jpg); */
@@ -28,7 +29,7 @@ button {
 h1 {
   font-family: "league gothic";
 }
-.AddressBar{
+.AddressBar {
   width: 100%;
 }
 .AddressBar {
@@ -37,7 +38,7 @@ h1 {
   font-family: "league gothic";
   height: fit-content;
   padding: 2vh;
-  background-color: #FF4955;
+  background-color: #ff4955;
   display: flex;
   position: relative;
   top: 0;
@@ -54,7 +55,7 @@ h1 {
   align-items: center;
   margin-left: 12vw;
 }
-.navbar{
+.navbar {
   display: flex;
   position: sticky;
   flex-wrap: wrap;
@@ -64,10 +65,10 @@ h1 {
   align-items: center;
   width: 100%;
   height: fit-content;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   font-family: "league gothic";
 }
-.navbar>a>img{
+.navbar > a > img {
   width: 19vw;
   height: fit-content;
   margin-left: 9vw;
@@ -86,7 +87,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.navbar>ul>li{
+.navbar > ul > li {
   margin-left: 6vw;
   font-size: 1.7vw;
   font-family: league gothic;
@@ -99,141 +100,132 @@ h1 {
   font-size: 25px;
   font-family: "league gothic";
 }
-.navbar>ul>li>a:hover{
-  color: #FF4955;
-  transition: .6s;
+.navbar > ul > li > a:hover {
+  color: #ff4955;
+  transition: 0.6s;
 }
-.navbar>ul>li>a{
+.navbar > ul > li > a {
   text-decoration: none;
   color: rgb(219, 218, 224);
 }
 @media screen and (max-width: 620px) {
-  .AddressBar{
-      width: 100%;
-      height: fit-content;
-      padding: 1vh;
-      background-color: #FF4955;
-      display: flex;
-      position: relative;
-      top: 0;
-      left: 0;
+  .AddressBar {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
   }
-  .AddressBar>p{
-      font-size: 1.4vw;
-      font-weight: 600;
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(219, 218, 224);
-      display: flex;
-      align-items: center;
-      margin-left: 12vw;
+  .AddressBar > p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
   }
-  .navbar{
-      display: flex;
-      position: sticky;
-      top: 0;
-      left: 0;
-      display: block;
-      align-items: center;
-      width: 100%;
-      height: fit-content;
-      background-color: rgba(0,0,0,0.2);
-      text-align: center;
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
-  .navbar>a>img{
-      width: 38vw;
-      height: 18vw;
-      margin-left: 9vw;
-      border-radius: 50%;
+  .navbar > a > img {
+    width: 38vw;
+    height: 18vw;
+    margin-left: 9vw;
+    border-radius: 50%;
   }
-  .navbar>ul{
-      display: block;
-      list-style-type: none;
-      margin-left: 8vw;
+  .navbar > ul {
+    display: block;
+    list-style-type: none;
+    margin-left: 8vw;
   }
-  .navbar>ul>li{
-      font-size: 3vw;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      background-color: rgba(0,0,0,0.2);
-      margin: .3vw;
-      padding: 1vw 0vw;
-  }   
+  .navbar > ul > li {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.3vw;
+    padding: 1vw 0vw;
+  }
 }
-
-
-
 
 /* ************* section Header ends here ************* */
 
 /* ************* section Main starts here ************* */
 
-.done{
+.done {
   background-color: black;
 }
-main{
-
+main {
   background-color: rgb(197, 191, 191);
   font-family: sans-serif;
-  
 }
-.wasi{
-
+.wasi {
   /* color: white; */
   width: 100vw;
   height: 60vh;
-background-image: url(../Images/img1.webp);
-background-repeat: no-repeat;
-background-position: center;
-background-size: 100%;
-object-fit: cover;
-aspect-ratio: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-weight: 900;
-font-weight: bolder;
-letter-spacing: 10px;
-font-size: xx-large;
-font-family: sans-serif;
+  background-image: url(../Images/img1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  font-size: xx-large;
+  font-family: sans-serif;
 }
-.wasi h1{
-  color:black;
-margin-top: 20px;
+.wasi h1 {
+  color: black;
+  margin-top: 20px;
 }
-.hmz{
+.hmz {
   background-color: black !important;
-  color:white;
+  color: white;
   height: 60vh;
   width: 90vw;
   margin-left: 20px;
   margin-right: 20px;
   /* color: white; */
-margin: auto;
-margin-top: 50px;
-display: grid;
-/* border: 1px solid red; */
-grid-template-columns: auto auto;
-/* justify-content: center; */
-/* align-items: center; */
-font-family: sans-serif;
-
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  /* border: 1px solid red; */
+  grid-template-columns: auto auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: sans-serif;
 }
-.ok h1{
- 
+.ok h1 {
   border: none;
-  
+
   margin-bottom: 20px;
   letter-spacing: 5px;
-
 }
-.ok p{
+.ok p {
   padding-left: 50px;
   padding-right: 50px;
 }
-.ok{
+.ok {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: left;
@@ -245,9 +237,9 @@ font-family: sans-serif;
   text-align: center;
   font-family: sans-serif;
   /* padding-right: 50px; */
-  
 }
-.pc{  font-family: sans-serif;
+.pc {
+  font-family: sans-serif;
   background-image: url(../Images/img2.avif);
   background-repeat: no-repeat;
   background-position: center;
@@ -257,55 +249,55 @@ font-family: sans-serif;
   height: 383px;
   /* border: 1px solid blue; */
 }
-.team{
+.team {
   font-family: sans-serif;
   width: 100vw;
   height: 120vh;
   /* border: 1px solid blue; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: auto;
-/* border: 1px solid red; */
-margin-top: 50px;
-  
-background-color: black !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid red; */
+  margin-top: 50px;
+
+  background-color: black !important;
 }
-.hedp{
+.hedp {
   font-family: sans-serif;
   margin-left: 50px;
-/* border: 1px solid yellow; */
-text-align: center;
-color: white;
+  /* border: 1px solid yellow; */
+  text-align: center;
+  color: white;
 }
-.hedp h1{
+.hedp h1 {
   letter-spacing: 5px;
   font-weight: bolder;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.hedp p{
-width: 70vw;
-height: 20vh;
- /* border: 1px solid black; */
- padding-left: 60px;
- padding-right: 60px;
-line-height: 20px;
+.hedp p {
+  width: 70vw;
+  height: 20vh;
+  /* border: 1px solid black; */
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 20px;
 }
 
-.pics{
+.pics {
   font-family: sans-serif;
   margin-top: 30px;
   width: 70vw;
   height: 50vh;
   margin-left: 50px;
-padding-left: 100px;
+  padding-left: 100px;
   /* background-color: red; */
-display: grid;
-grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
-.same{
+.same {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,44 +308,44 @@ grid-template-columns: auto auto auto;
   height: 100px;
   font-family: sans-serif;
 }
-.same i{
+.same i {
   position: relative;
   top: -29px;
   left: 20px;
 }
-.a2 i{
+.a2 i {
   position: relative;
   left: 50px;
 }
-.a3 i{
-position: relative;
-left: 50px;
+.a3 i {
+  position: relative;
+  left: 50px;
 }
-.a4 i{
+.a4 i {
   position: relative;
   left: 60px;
 }
-.a5 i{
+.a5 i {
   position: relative;
   left: 60px;
 }
-.a6 i{
+.a6 i {
   position: relative;
   left: 20px;
 }
-.a7 i{
+.a7 i {
   position: relative;
   left: 30px;
 }
-.a8 i{
+.a8 i {
   position: relative;
   left: 40px;
 }
-.a9 i{
+.a9 i {
   position: relative;
   left: 50px;
 }
-.FOLLOW{
+.FOLLOW {
   width: 100vw;
   height: 100vh;
   background-image: url(../Images/img3.avif);
@@ -361,43 +353,40 @@ left: 50px;
   background-position: center;
   background-size: 100%;
   font-family: sans-serif;
-
 }
-.us{
+.us {
   font-family: sans-serif;
   background-color: white;
   width: 250px;
   height: 100vh;
   margin: auto;
-border: 1px solid blue;
-margin-top: 50px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: black;
-color: white;
+  border: 1px solid blue;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
 }
-.icon ul{
+.icon ul {
   margin-top: 30px;
 }
-.icon li{
- padding-left: 10px;
+.icon li {
+  padding-left: 10px;
   display: inline;
 }
-.world{
+.world {
   display: flex;
   align-items: center;
   background-color: black;
   color: white;
-justify-content: center;
-margin: auto;
-width: 95vw;
-height: 50vh;
+  justify-content: center;
+  margin: auto;
+  width: 95vw;
+  height: 50vh;
 }
-.ok{
-  
- 
+.ok {
   margin-left: 200px;
 }
 main {
@@ -565,11 +554,11 @@ main {
 /* ************* section Pink-Headphones starts here ************* */
 
 .pink-headphones {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  /* padding: 10rem; */
-  margin-right: 2rem;
+  padding: 5rem;
+  margin-top: 2rem;
   .text {
     display: flex;
     flex-direction: column;
@@ -627,12 +616,12 @@ main {
   }
   .pics {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     .img1 {
       position: relative;
       img {
-        /* padding-right: 10rem; */
-        height: 90%;
+        /* position: absolute; */
+        height: 200%;
       }
       .img2 {
         img {
@@ -814,34 +803,43 @@ i {
 
 /* ************* section Footer starts here ************* */
 
-footer{
+footer {
   width: 100%;
   height: fit-content;
   padding: 4vw;
   margin-top: 13vh;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   bottom: 0;
   left: 0;
   display: flex;
 }
 
-.footer-img>a>img{
+.footer-img > a > img {
   width: 22vw;
   height: 14vh;
 }
-footer>.shop-div{
+footer > .shop-div {
   margin-left: 6vw;
 }
-.shop-div,.company-div,.support-div,.contact-div{
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
   margin-left: 6vw;
 }
-.shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
+.shop-div > h1,
+.company-div > h1,
+.support-div > h1,
+.contact-div > h1 {
   font-size: 2.3vw;
-  color: #FF4955;
+  color: #ff4955;
   margin-bottom: 1vw;
 }
-.shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
+.shop-div > ul > li > a,
+.company-div > ul > li > a,
+.support-div > ul > li > a,
+.contact-div > ul > li > a {
   text-decoration: none;
   color: aliceblue;
   font-size: 1.3vw;
@@ -972,18 +970,25 @@ footer {
   font-size: 1.3vw;
 }
 
-.shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
+.shop-div > ul > li,
+.company-div > ul > li,
+.support-div > ul > li,
+.contact-div > ul > li {
   color: aliceblue;
   font-size: 1.3vw;
   list-style-type: none;
-  padding-top: .7vw;
-  margin-top: .7vw;
+  padding-top: 0.7vw;
+  margin-top: 0.7vw;
 }
-.shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
+.shop-div > ul > h3,
+.company-div > ul > h3,
+.support-div > ul > h3,
+.contact-div > ul > h3 {
   font-size: 3.5vw;
   color: aliceblue;
   text-shadow: 0.15vw 0.15vw #ff4955;
-  margin-top: 3vw;}
+  margin-top: 3vw;
+}
 
 .shop-div > ul > li,
 .company-div > ul > li,
@@ -1002,60 +1007,74 @@ footer {
 .contact-div > ul > h3 {
   font-size: 1.4vw;
   color: aliceblue;
-  text-shadow: 1px 1px #FF4955;
+  text-shadow: 1px 1px #ff4955;
   margin-top: 1vw;
 }
 
+@media screen and (max-width: 620px) {
+  footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+  }
 
-@media screen and (max-width: 620px){
-  footer{
-      width: 100%;
-      height: fit-content;
-      padding: 4vw;
-      background-color: rgba(0,0,0,0.6);
-      position: relative;
-      bottom: 0;
-      left: 0;
-      display: block;
-      text-align: center;
+  .footer-img > img {
+    width: 38vw;
+    height: 13vh;
   }
-  
-  .footer-img>img{
-      width: 38vw;
-      height: 13vh;
+  footer > .shop-div {
+    margin-left: 6vw;
   }
-  footer>.shop-div{
-      margin-left: 6vw;
+  .shop-div,
+  .company-div,
+  .support-div,
+  .contact-div {
+    margin: 9vw 0vw 0vw 6vw;
   }
-  .shop-div,.company-div,.support-div,.contact-div{
-      margin: 9vw 0vw 0vw 6vw;
+  .shop-div > h1,
+  .company-div > h1,
+  .support-div > h1,
+  .contact-div > h1 {
+    font-size: 4.5vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
   }
-  .shop-div>h1,.company-div>h1,.support-div>h1,.contact-div>h1{
-      font-size: 4.5vw;
-      color: #FF4955;
-      margin-bottom: 1vw;
+  .shop-div > ul > li > a,
+  .company-div > ul > li > a,
+  .support-div > ul > li > a,
+  .contact-div > ul > li > a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 3vw;
   }
-  .shop-div>ul>li>a,.company-div>ul>li>a,.support-div>ul>li>a,.contact-div>ul>li>a {
-      text-decoration: none;
-      color: #f0f8ff;
-      font-size: 3vw;
+  .shop-div > ul > li,
+  .company-div > ul > li,
+  .support-div > ul > li,
+  .contact-div > ul > li {
+    color: aliceblue;
+    font-size: 3vw;
+    list-style-type: none;
+    padding-top: 1.2vw;
+    margin-top: 0.7vw;
   }
-  .shop-div>ul>li,.company-div>ul>li,.support-div>ul>li,.contact-div>ul>li{
-      color: aliceblue;
-      font-size: 3vw;
-      list-style-type: none;
-      padding-top: 1.2vw;
-      margin-top: .7vw;
+  .shop-div > ul > h3,
+  .company-div > ul > h3,
+  .support-div > ul > h3,
+  .contact-div > ul > h3 {
+    font-size: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.15vw 0.15vw #ff4955;
+    margin-top: 3vw;
   }
-  .shop-div>ul>h3,.company-div>ul>h3,.support-div>ul>h3,.contact-div>ul>h3{
-      font-size: 3.5vw;
-      color: aliceblue;
-      text-shadow: .15vw .15vw #FF4955;
-      margin-top: 3vw;
+  .contact-div ul li {
+    width: 100%;
   }
-.contact-div ul li {
-  width: 100%;
-}
 }
 /* ************* section Footer ends here ************* */
 
