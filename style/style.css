@@ -194,22 +194,20 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  object-fit: cover;
-  aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: 900;
-  font-weight: bolder;
   letter-spacing: 10px;
-  font-size: xx-large;
+  font-size: 2vw;
   font-family: sans-serif;
 }
 
 .wasi h1 {
   color: black;
   margin-top: 20px;
+  font-size: 10vw;
 }
 
 .hmz {
@@ -229,6 +227,7 @@ main {
   border: none;
   margin-bottom: 2vw;
   letter-spacing: .5vw;
+  font-size: 8vw;
 }
 .ok>h2{
   font-size: 3vw;
@@ -242,7 +241,6 @@ main {
   text-align: center;
   font-family: sans-serif;
   /* padding-right: 50px; */
-  border: 2px solid black;
 }
 
 .pc {
@@ -634,7 +632,8 @@ main {
 .pink-headphones {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
   padding: 5rem;
   margin-top: 2rem;
 
@@ -682,8 +681,8 @@ main {
       padding: 1rem 2rem;
       border: none;
       color: aliceblue;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 2vw;
+      line-height: 2vw;
       font-weight: 400;
       background-color: rgb(255, 73, 85);
       transition: linear 0.3s;
@@ -702,22 +701,25 @@ main {
 
   .pics {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 10rem;
 
     .img1 {
       position: relative;
 
       img {
         /* position: absolute; */
-        height: 100%;
+        height: 60vh;
+        width: 40vw;
       }
 
       .img2 {
         img {
           position: absolute;
-          top: 3vh;
-          height: 30vh;
-          left: -10vw;
+          top: 2rem;
+          left: -7rem;
+          width: 20vw;
+          height: 20vw;
         }
       }
     }
@@ -735,6 +737,7 @@ main {
   padding: 2rem;
   /* margin: 2rem; */
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .why {
@@ -878,7 +881,7 @@ i {
       padding: 1rem 2rem;
       border: none;
       color: aliceblue;
-      font-size: 20px;
+      font-size: 2vw;
       line-height: 20px;
       font-weight: 400;
       background-color: rgb(255, 73, 85);
@@ -1046,6 +1049,120 @@ footer>.shop-div {
 
 /* ************* section Footer ends here ************* */
 
+/* ************* section Cart page starts here ************* */
+
+.Cart-Page {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  /* Lighter border for the container */
+  border-radius: 8px;
+  /* Slight rounding for a modern card look */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: aliceblue;
+  /* Text color */
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+  color: aliceblue;
+  /* Text color */
+}
+
+td input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  /* Subtle border for inputs */
+  border-radius: 4px;
+  color: aliceblue;
+  /* Text color */
+  background-color: transparent;
+}
+
+td a {
+  font-size: 14px;
+  text-decoration: none;
+  color: aliceblue;
+  /* Text color */
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.total-price table {
+  border: 1px solid #e0e0e0;
+  /* Lighter border for the total price table */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 370px;
+}
+
+button {
+  background-color: #ff4955;
+  border: 1px solid transparent;
+  /* Transparent border for clean look */
+  color: aliceblue;
+  /* Text color */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+/* Horizontal lines at the end of each cart item */
+tr:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+  /* Light border after each item row */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  /* Light horizontal line */
+  margin: 20px 0;
+}
+
+
+/* ************* section Cart page ends here ************* */
+
 /* ************* section contact starts here ************* */
 
 h1 {
@@ -1104,18 +1221,18 @@ h1 {
 }
 
 .emaill {
-  height: 50px;
-  width: 425px;
+  height: 5vw;
+  width: 42vwx;
 }
 
 .button {
-  height: 35px;
+  height: 3vw;
   border: none;
   border-radius: 10px;
   width: 130px;
   background-color: rgb(252, 55, 70);
   color: white;
-  font-size: 16px;
+  font-size: 1.4vw;
 }
 
 .button:hover {
@@ -1132,7 +1249,7 @@ h1 {
   iframe {
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 40vw;
     width: 100%;
   }
 }
@@ -1172,25 +1289,24 @@ h1 {
     width: 60vw;
   }
 
+  .product-cards {
+    flex-wrap: wrap;
+  }
+
   .product-cards .text h1 {
     font-size: 40px;
   }
 
   .product-cards .cards {
-    grid-template-columns: auto;
+    display: block;
   }
 
   .pink-headphones{
     display: block;
   }
-  .pics>.img1>img{
-    width: 60vw;
-    height: 40vh;
-  }
-  .pics>.img1>.img2>img{
-    width: 30vw;
-    height: 20vh;
-  }
+ 
+
+  
   .pink-headphones .text h1 {
     font-size: 40px;
     width: 60vw;
@@ -1199,12 +1315,44 @@ h1 {
   .pink-headphones .text p {
     width: 60vw;
   }
-
   .why-us{
     width: 100%;
     display: block;
     height: fit-content;
   }
+  .product-cards .text h1 {
+    font-size: 30px;
+  }
+
+  .product-cards .cards {
+    display: block;
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones .text h1 {
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .pink-headphones .text p {
+    width: 70vw;
+  }
+
+
+  .pink-headphones .pics .img1 img {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .pink-headphones .pics .img1 .img2 img {
+    width: 20vw;
+    height: 20vh;
+  }
+
   .why h1 {
     font-size: 4vw;
     width: 60vw;
@@ -1254,8 +1402,21 @@ h1 {
     font-size: 5vw;
   }
 
+  .product-cards {
+    flex-wrap: wrap;
+  }
+
   .product-cards .cards {
     grid-template-columns: auto;
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    flex-direction: column;
   }
 
   .pink-headphones .text h1 {
@@ -1266,6 +1427,7 @@ h1 {
   .pink-headphones .text p {
     width: 70vw;
   }
+
 
   .why h1 {
     font-size: 3vw;
