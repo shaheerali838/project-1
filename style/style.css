@@ -12,11 +12,10 @@ html,
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../Images/bg_pic.jpg);
-  /* background-color: black !important; */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../Images/bg_pic.jpg); */
   background-color: black !important;
   background-size: cover;
+  background-attachment: fixed;
+  border: 2px solid white;
   /* font-size: 62.5%; */
 }
 
@@ -175,7 +174,7 @@ h1 {
 }
 
 /* ************* section Header ends here ************* */
-
+/* Section About Us */
 /* ************* section Main starts here ************* */
 
 .done {
@@ -189,7 +188,7 @@ main {
 
 .wasi {
   /* color: white; */
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   background-image: url(../Images/img1.webp);
   background-repeat: no-repeat;
@@ -216,47 +215,34 @@ main {
 .hmz {
   background-color: black !important;
   color: white;
-  height: 60vh;
-  width: 90vw;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
   /* color: white; */
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 10vw;
   display: grid;
-  /* border: 1px solid red; */
   grid-template-columns: auto auto;
-  /* justify-content: center; */
-  /* align-items: center; */
   font-family: sans-serif;
 }
 
 .ok h1 {
   border: none;
-
-  margin-bottom: 20px;
-  letter-spacing: 5px;
+  margin-bottom: 2vw;
+  letter-spacing: .5vw;
 }
-
-.ok p {
-  padding-left: 50px;
-  padding-right: 50px;
+.ok>h2{
+  font-size: 3vw;
 }
-
 .ok {
+  width: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: left;
-  margin-top: 40px;
-  padding-top: 50px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
+  margin: 5vw 3vw 0vw 3vw ;
   text-align: center;
   font-family: sans-serif;
   /* padding-right: 50px; */
+  border: 2px solid black;
 }
 
 .pc {
@@ -265,140 +251,108 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  /* margin-top: -20px; */
-  width: 600px;
-  height: 383px;
+  width: 50vw;
+  height: 60vh;
   /* border: 1px solid blue; */
 }
 
 .team {
   font-family: sans-serif;
-  width: 100vw;
-  height: 120vh;
+  width: 100%;
+  height: 100vw;
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  /* border: 1px solid red; */
-  margin-top: 50px;
-
+  margin-top: 6vw;
+  margin-bottom: 20vw;
+  overflow: hidden;
   background-color: black !important;
 }
 
 .hedp {
   font-family: sans-serif;
-  margin-left: 50px;
+  margin-left: 5vw;
   /* border: 1px solid yellow; */
   text-align: center;
   color: white;
 }
-
+.hedp h3{
+  font-size: 2.4vw;
+}
 .hedp h1 {
   letter-spacing: 5px;
   font-weight: bolder;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 9vw;
+  margin-bottom: 2vh;
 }
 
 .hedp p {
+  font-size: 2vw;
   width: 70vw;
   height: 20vh;
-  /* border: 1px solid black; */
-  padding-left: 60px;
-  padding-right: 60px;
-  line-height: 20px;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  line-height: 3vw;
 }
 
-.pics {
-  font-family: sans-serif;
-  margin-top: 30px;
-  width: 70vw;
-  height: 50vh;
-  margin-left: 50px;
-  padding-left: 100px;
-  /* background-color: red; */
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
+  .pics {
+    font-family: sans-serif;
+    margin-top: 3vw;
+    width: 70vw;
+    height: 50vh;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 
 .same {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: red;
+  margin: .5vw;
   color: black;
   /* border: 2px solid yellow; */
-  width: 150px;
-  height: 100px;
+  width: 23vw;
+  height: 15vw;
   font-family: sans-serif;
 }
 
 .same i {
   position: relative;
-  top: -29px;
-  left: 20px;
+  font-size: 2vw;
+  top: -2vw;
+  left: 2vw;
 }
 
-.a2 i {
+.pics>div> i {
   position: relative;
   left: 50px;
 }
 
-.a3 i {
-  position: relative;
-  left: 50px;
-}
 
-.a4 i {
-  position: relative;
-  left: 60px;
-}
-
-.a5 i {
-  position: relative;
-  left: 60px;
-}
-
-.a6 i {
-  position: relative;
-  left: 20px;
-}
-
-.a7 i {
-  position: relative;
-  left: 30px;
-}
-
-.a8 i {
-  position: relative;
-  left: 40px;
-}
-
-.a9 i {
-  position: relative;
-  left: 50px;
-}
 
 .FOLLOW {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   background-image: url(../Images/img3.avif);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 100% 90vh;
   font-family: sans-serif;
+  margin-top: 30vh;
 }
 
 .us {
   font-family: sans-serif;
   background-color: white;
-  width: 250px;
-  height: 100vh;
+  width: 26vw;
+  height: 90vh;
   margin: auto;
   border: 1px solid blue;
-  margin-top: 50px;
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -406,16 +360,20 @@ main {
   background-color: black;
   color: white;
 }
-
+.us>h2{
+  font-size: 5vw;
+}
 .icon ul {
-  margin-top: 30px;
+  margin-top: 3vh;
 }
 
 .icon li {
-  padding-left: 10px;
+  padding-left: 1vw;
   display: inline;
 }
-
+.icon>ul>li>i{
+  font-size: 3vw;
+}
 .world {
   display: flex;
   align-items: center;
@@ -423,12 +381,12 @@ main {
   color: white;
   justify-content: center;
   margin: auto;
-  width: 95vw;
+  width: 100%;
   height: 50vh;
+  overflow: hidden;
 }
-
-.ok {
-  margin-left: 200px;
+.world>div>i{
+  font-size: 5vw;
 }
 
 main {
@@ -467,7 +425,7 @@ main {
       h1 {
         width: 30vw;
         font-weight: 400;
-        font-size: 78px;
+        font-size: 7vw;
         line-height: 62px;
         font-family: "league gothic";
         font-family: "league gothic";
@@ -505,6 +463,60 @@ main {
   }
 }
 
+
+
+/* Responsiveness Of Aboutus page */
+@media screen and (max-width:920px) {
+  .hmz {
+    background-color: black !important;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    margin: 17vh 0vw 0vw 0vw;
+    display: block;
+  }
+  .ok {
+    width: 50vw;
+    margin: 0px 0px 0px 5vw ;
+    display: flex;
+  }
+  
+  .pc {
+    background-size: 50vw 40vh;
+    width: 50vw;
+    height: 40vh;
+    margin: 0px 0px 0px 25vw ;
+    padding: 0px;
+  }
+  .pics {
+    font-family: sans-serif;
+    margin-top: 3vw;
+    width: 90vw;
+    height: 50vh;
+    margin-left: 10vw;
+    padding-left: 0px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .pics>div> i {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:620px){
+.FOLLOW {
+  height: 50vh;
+  background-size: 100% 50vh;
+  margin-top: 10vh;
+}
+.us {
+  height: 50vh;
+}
+.us>h2{
+  font-size: 5vw;
+}
+}
 /* ************* section Main ends here************* */
 
 /* ************* section Product cards starts here ************* */
@@ -697,7 +709,7 @@ main {
 
       img {
         /* position: absolute; */
-        height: 200%;
+        height: 100%;
       }
 
       .img2 {
@@ -716,6 +728,8 @@ main {
 
 /* ************* section Why-us starts here ************* */
 .why-us {
+  overflow: hidden;
+  width: 100%;
   height: 100vh;
   display: flex;
   padding: 2rem;
@@ -726,8 +740,8 @@ main {
 .why {
   h2 {
     font-family: "Kaushan Script";
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 3vw;
+    line-height: 3vw;
     color: #ff4955;
   }
 
@@ -735,8 +749,8 @@ main {
     margin-top: 1rem;
     text-transform: uppercase;
     color: aliceblue;
-    font-size: 78px;
-    line-height: 62px;
+    font-size: 7vw;
+    line-height: 6vw;
     width: 35vw;
     font-weight: 400;
     font-family: "league gothic";
@@ -836,15 +850,15 @@ i {
       margin-top: 0.5rem;
       font-family: "Kaushan Script";
       color: rgb(255, 73, 85);
-      line-height: 36px;
-      font-size: 30px;
+      line-height: 3vw;
+      font-size: 3vw;
       margin-bottom: 1rem;
     }
 
     h1 {
       width: 50vw;
       font-weight: 400;
-      font-size: 78px;
+      font-size: 7vw;
       line-height: 62px;
       font-family: "league gothic";
       font-family: "league gothic";
@@ -940,155 +954,6 @@ footer>.shop-div {
   font-size: 1.3vw;
 }
 
-footer {
-  width: 100%;
-  height: fit-content;
-  padding: 4vw;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: relative;
-  bottom: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  /* Added gap between columns */
-}
-
-.footer-img {
-  margin-right: 2rem;
-  /* Added gap between the image and the columns */
-}
-
-.shop-div,
-.company-div,
-.support-div,
-.contact-div {
-  margin: 1rem 0;
-}
-
-.shop-div>ul>h3,
-.company-div>ul>h3,
-.support-div>ul>h3,
-.contact-div>ul>h3 {
-  font-size: 1.4vw;
-  color: aliceblue;
-  text-shadow: 1px 1px #ff4955;
-  margin-top: 1vw;
-}
-
-@media screen and (max-width: 620px) {
-  footer {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-img>img {
-    width: 38vw;
-    height: 13vh;
-  }
-
-  .shop-div,
-  .company-div,
-  .support-div,
-  .contact-div {
-    margin: 9vw 0;
-    width: 88vw;
-  }
-
-  .shop-div>h1,
-  .company-div>h1,
-  .support-div>h1,
-  .contact-div>h1 {
-    font-size: 4.5vw;
-    color: #ff4955;
-    margin-bottom: 1vw;
-  }
-
-  .shop-div>ul>li>a,
-  .company-div>ul>li>a,
-  .support-div>ul>li>a,
-  .contact-div>ul>li>a {
-    text-decoration: none;
-    color: #f0f8ff;
-    font-size: 3vw;
-  }
-
-  .shop-div>ul>li,
-  .company-div>ul>li,
-  .support-div>ul>li,
-  .contact-div>ul>li {
-    color: aliceblue;
-    font-size: 3vw;
-    list-style-type: none;
-    padding-top: 1.2vw;
-    margin-top: 0.7vw;
-  }
-
-  .shop-div>ul>h3,
-  .company-div>ul>h3,
-  .support-div>ul>h3,
-  .contact-div>ul>h3 {
-    font-size: 3.5vw;
-    color: aliceblue;
-    text-shadow: 0.15vw 0.15vw #ff4955;
-    margin-top: 3vw;
-  }
-}
-
-.footer-img>a>img {
-  width: 22vw;
-  height: 14vh;
-  gap: 2rem;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-
-.shop-div,
-.company-div,
-.support-div,
-.contact-div {
-  width: 100%;
-}
-
-.shop-div>h1,
-.company-div>h1,
-.support-div>h1,
-.contact-div>h1 {
-  font-size: 2.3vw;
-  color: #ff4955;
-  margin-bottom: 1vw;
-}
-
-.shop-div>ul>li>a,
-.company-div>ul>li>a,
-.support-div>ul>li>a,
-.contact-div>ul>li>a {
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 1.3vw;
-}
-
-.shop-div>ul>li,
-.company-div>ul>li,
-.support-div>ul>li,
-.contact-div>ul>li {
-  color: aliceblue;
-  font-size: 1.3vw;
-  list-style-type: none;
-  padding-top: 0.7vw;
-  margin-top: 0.7vw;
-}
-
-.shop-div>ul>h3,
-.company-div>ul>h3,
-.support-div>ul>h3,
-.contact-div>ul>h3 {
-  font-size: 3.5vw;
-  color: aliceblue;
-  text-shadow: 0.15vw 0.15vw #ff4955;
-  margin-top: 3vw;
-}
-
 .shop-div>ul>li,
 .company-div>ul>li,
 .support-div>ul>li,
@@ -1176,10 +1041,6 @@ footer {
     color: aliceblue;
     text-shadow: 0.15vw 0.15vw #ff4955;
     margin-top: 3vw;
-  }
-
-  .contact-div ul li {
-    width: 100%;
   }
 }
 
@@ -1280,67 +1141,6 @@ h1 {
 
 /* ************* section Responsiveness starts here ************* */
 
-@media screen and (max-width: 1024px) {
-  .AddressBar>p {
-    font-size: 2vw;
-    margin-left: 5vw;
-  }
-
-  .navbar>a>img {
-    width: 30vw;
-    margin-left: 5vw;
-  }
-
-  .navbar>ul {
-    margin-left: 5vw;
-  }
-
-  .navbar>ul>li {
-    margin-left: 2vw;
-    font-size: 3vw;
-  }
-
-  main .ad .text h1 {
-    width: 50vw;
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  main .ad .text p {
-    width: 50vw;
-  }
-
-  .product-cards .text h1 {
-    font-size: 50px;
-  }
-
-  .product-cards .cards {
-    grid-template-columns: auto auto;
-  }
-
-  .pink-headphones .text h1 {
-    font-size: 50px;
-    width: 50vw;
-  }
-
-  .pink-headphones .text p {
-    width: 50vw;
-  }
-
-  .why h1 {
-    font-size: 50px;
-    width: 50vw;
-  }
-
-  .main .text h1 {
-    font-size: 50px;
-    width: 70vw;
-  }
-
-  .main .text p {
-    width: 70vw;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .AddressBar>p {
@@ -1380,6 +1180,17 @@ h1 {
     grid-template-columns: auto;
   }
 
+  .pink-headphones{
+    display: block;
+  }
+  .pics>.img1>img{
+    width: 60vw;
+    height: 40vh;
+  }
+  .pics>.img1>.img2>img{
+    width: 30vw;
+    height: 20vh;
+  }
   .pink-headphones .text h1 {
     font-size: 40px;
     width: 60vw;
@@ -1389,13 +1200,18 @@ h1 {
     width: 60vw;
   }
 
+  .why-us{
+    width: 100%;
+    display: block;
+    height: fit-content;
+  }
   .why h1 {
-    font-size: 40px;
+    font-size: 4vw;
     width: 60vw;
   }
 
   .main .text h1 {
-    font-size: 40px;
+    font-size: 4vw;
     width: 80vw;
   }
 
@@ -1426,8 +1242,8 @@ h1 {
 
   main .ad .text h1 {
     width: 70vw;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 3vw;
+    line-height: 3vw;
   }
 
   main .ad .text p {
@@ -1435,7 +1251,7 @@ h1 {
   }
 
   .product-cards .text h1 {
-    font-size: 30px;
+    font-size: 5vw;
   }
 
   .product-cards .cards {
@@ -1443,7 +1259,7 @@ h1 {
   }
 
   .pink-headphones .text h1 {
-    font-size: 30px;
+    font-size: 3vw;
     width: 70vw;
   }
 
@@ -1452,13 +1268,18 @@ h1 {
   }
 
   .why h1 {
-    font-size: 30px;
+    font-size: 3vw;
     width: 70vw;
   }
 
   .main .text h1 {
-    font-size: 30px;
+    font-size: 3vw;
     width: 90vw;
+  }
+  .text>h2{
+    font-size: 30vw;
+    width: 90vw;
+    margin: 0px;
   }
 
   .main .text p {
