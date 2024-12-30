@@ -416,9 +416,10 @@ main {
     height: 100%;
 
     .text {
-      padding: 5rem;
+      padding: 2rem 2rem 1rem 5rem;
       color: aliceblue;
       position: absolute;
+      height: fit-content;
 
       h2 {
         /* margin-top: 0.5rem; */
@@ -433,9 +434,9 @@ main {
         width: 30vw;
         font-weight: 400;
         font-size: 7vw;
-        line-height: 62px;
+        line-height: 5.5vw;
         font-family: "league gothic";
-        font-family: "league gothic";
+        text-align: left;
       }
 
       p {
@@ -449,10 +450,11 @@ main {
 
     img {
       position: absolute;
-      padding: 5rem;
-      right: 1rem;
-      width: 40%;
-      height: 100%;
+      top: 20%;
+      left: 50%;
+      width: 50%;
+      height: 70%;
+
       object-fit: contain;
     }
 
