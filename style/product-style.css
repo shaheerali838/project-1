@@ -281,22 +281,145 @@ h1 {
     height: 30px;
     margin-right: 10px;
 }
+
 @media screen and (max-width:620px) {
-    *{
+    * {
         margin: 0;
-        
+
     }
-    .product-container{
+
+    .product-container {
         display: block;
         width: 100%;
     }
-    .product-image{
+
+    .product-image {
         width: 100%;
     }
-    .product-details{
+
+    .product-details {
         width: 100%;
     }
 }
+
+/* ************* section Product cards starts here ************* */
+
+.product-cards {
+    margin: 6vw;
+
+    .text {
+        margin-top: 10vw;
+        margin: 8vh;
+        text-align: center;
+
+        h2 {
+            font-family: "Kaushan Script";
+            color: #ff4955;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-family: "Kaushan Script";
+            color: #ff4955;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-size: 5vw;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-size: 90px;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 2vw;
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            /* align-items: center; */
+            .txt {
+                font-family: "league gothic";
+                letter-spacing: 1px;
+                text-transform: uppercase;
+
+                h3 {
+                    margin: 1rem 1rem 1rem 0;
+                    color: aliceblue;
+                    transition: linear 0.2s;
+                    -webkit-transition: linear 0.2s;
+                    -moz-transition: linear 0.2s;
+                    -ms-transition: linear 0.2s;
+                    -o-transition: linear 0.2s;
+                }
+
+                .icos {
+                    margin: -1px;
+                    color: #ff4955;
+                    font-size: 13px;
+                    letter-spacing: 0px;
+                }
+
+                p {
+                    margin: 1rem 1rem 1rem 0;
+                    font-size: 12px;
+                    font-family: "Manrope";
+                    color: aliceblue;
+
+                    s {
+                        color: #808080;
+                    }
+                }
+            }
+
+            img {
+                height: auto;
+                width: 20vw;
+            }
+
+            transition: linear 0.2s;
+            -webkit-transition: linear 0.2s;
+            -moz-transition: linear 0.2s;
+            -ms-transition: linear 0.2s;
+            -o-transition: linear 0.2s;
+        }
+    }
+
+    .card:hover {
+        scale: 0.95;
+
+        img {
+            filter: brightness(85%);
+            -webkit-filter: brightness(85%);
+        }
+
+        .txt {
+            h3 {
+                color: #ff4955;
+            }
+        }
+
+        p {
+            color: #ff4955;
+        }
+    }
+}
+
+/* ************* section Product cards ends here ************* */
 
 /* ************* section Footer starts here ************* */
 

@@ -751,7 +751,7 @@ main {
   padding: 2rem;
   /* margin: 2rem; */
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .why {
@@ -1322,6 +1322,38 @@ h1 {
     width: 100%;
   }
 
+  .pink-headphones {
+    .pics {
+      margin: 0;
+      width: fit-content;
+      padding: 0;
+
+      .img1 {
+        img {
+          width: 50vw;
+          height: 40vh;
+        }
+
+        .img2 {
+          img {
+            width: 20vw;
+            height: 20vh;
+          }
+        }
+      }
+
+    }
+  }
+
+  header {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
 
 
   .pink-headphones .text h1 {
