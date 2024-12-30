@@ -205,10 +205,6 @@ h1 {
     border-radius: 10px;
 }
 
-
-
-
-
 .product-details {
     width: 50%;
 }
@@ -284,6 +280,22 @@ h1 {
 .payment-methods img {
     height: 30px;
     margin-right: 10px;
+}
+@media screen and (max-width:620px) {
+    *{
+        margin: 0;
+        
+    }
+    .product-container{
+        display: block;
+        width: 100%;
+    }
+    .product-image{
+        width: 100%;
+    }
+    .product-details{
+        width: 100%;
+    }
 }
 
 /* ************* section Footer starts here ************* */
