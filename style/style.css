@@ -535,10 +535,13 @@ main {
 /* ************* section Product cards starts here ************* */
 
 .product-cards {
-  margin: 6vw;
+  display: flex;
+  justify-content: center;
+  padding: 4vw;
+  flex-direction: column;
 
   .text {
-    margin: 8vh;
+    width: fit-content;
     text-align: center;
 
     h2 {
@@ -547,6 +550,15 @@ main {
       letter-spacing: 1px;
       font-weight: 300;
       font-size: 30px;
+      justify-content: center;
+    }
+
+    h3 {
+      font-family: "Kaushan Script";
+      color: #ff4955;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-size: 5vw;
     }
 
     h1 {
@@ -562,6 +574,7 @@ main {
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     gap: 2vw;
+    width: fit-content;
 
     a {
       text-decoration: none;
@@ -571,8 +584,10 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: fit-content;
 
-      /* align-items: center; */
+      align-items: center;
+
       .txt {
         font-family: "league gothic";
         letter-spacing: 1px;
@@ -639,6 +654,8 @@ main {
     }
   }
 }
+
+/* ************* section Product cards ends here ************* */
 
 /* ************* section Product cards ends here ************* */
 
