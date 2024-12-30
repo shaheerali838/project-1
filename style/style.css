@@ -183,7 +183,7 @@ h1 {
 
 main {
   background-color: rgb(197, 191, 191);
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 .wasi {
