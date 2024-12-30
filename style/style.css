@@ -15,7 +15,7 @@ body {
   background-color: black !important;
   background-size: cover;
   background-attachment: fixed;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   /* font-size: 62.5%; */
 }
 
@@ -229,15 +229,17 @@ main {
   letter-spacing: .5vw;
   font-size: 8vw;
 }
-.ok>h2{
+
+.ok>h2 {
   font-size: 3vw;
 }
+
 .ok {
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin: 5vw 3vw 0vw 3vw ;
+  margin: 5vw 3vw 0vw 3vw;
   text-align: center;
   font-family: sans-serif;
   /* padding-right: 50px; */
@@ -276,9 +278,11 @@ main {
   text-align: center;
   color: white;
 }
-.hedp h3{
+
+.hedp h3 {
   font-size: 2.4vw;
 }
+
 .hedp h1 {
   letter-spacing: 5px;
   font-weight: bolder;
@@ -295,15 +299,15 @@ main {
   line-height: 3vw;
 }
 
-  .pics {
-    font-family: sans-serif;
-    margin-top: 3vw;
-    width: 70vw;
-    height: 50vh;
-    margin-left: 5vw;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
+.pics {
+  font-family: sans-serif;
+  margin-top: 3vw;
+  width: 70vw;
+  height: 50vh;
+  margin-left: 5vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
 .same {
   display: flex;
@@ -325,7 +329,7 @@ main {
   left: 2vw;
 }
 
-.pics>div> i {
+.pics>div>i {
   position: relative;
   left: 50px;
 }
@@ -358,9 +362,11 @@ main {
   background-color: black;
   color: white;
 }
-.us>h2{
+
+.us>h2 {
   font-size: 5vw;
 }
+
 .icon ul {
   margin-top: 3vh;
 }
@@ -369,9 +375,11 @@ main {
   padding-left: 1vw;
   display: inline;
 }
-.icon>ul>li>i{
+
+.icon>ul>li>i {
   font-size: 3vw;
 }
+
 .world {
   display: flex;
   align-items: center;
@@ -383,7 +391,8 @@ main {
   height: 50vh;
   overflow: hidden;
 }
-.world>div>i{
+
+.world>div>i {
   font-size: 5vw;
 }
 
@@ -473,19 +482,21 @@ main {
     margin: 17vh 0vw 0vw 0vw;
     display: block;
   }
+
   .ok {
     width: 50vw;
-    margin: 0px 0px 0px 5vw ;
+    margin: 0px 0px 0px 5vw;
     display: flex;
   }
-  
+
   .pc {
     background-size: 50vw 40vh;
     width: 50vw;
     height: 40vh;
-    margin: 0px 0px 0px 25vw ;
+    margin: 0px 0px 0px 25vw;
     padding: 0px;
   }
+
   .pics {
     font-family: sans-serif;
     margin-top: 3vw;
@@ -497,24 +508,28 @@ main {
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  .pics>div> i {
+
+  .pics>div>i {
     text-align: center;
   }
 }
 
-@media screen and (max-width:620px){
-.FOLLOW {
-  height: 50vh;
-  background-size: 100% 50vh;
-  margin-top: 10vh;
+@media screen and (max-width:620px) {
+  .FOLLOW {
+    height: 50vh;
+    background-size: 100% 50vh;
+    margin-top: 10vh;
+  }
+
+  .us {
+    height: 50vh;
+  }
+
+  .us>h2 {
+    font-size: 5vw;
+  }
 }
-.us {
-  height: 50vh;
-}
-.us>h2{
-  font-size: 5vw;
-}
-}
+
 /* ************* section Main ends here************* */
 
 /* ************* section Product cards starts here ************* */
@@ -708,8 +723,7 @@ main {
       position: relative;
 
       img {
-        /* position: absolute; */
-        height: 60vh;
+        height: auto;
         width: 40vw;
       }
 
@@ -718,8 +732,8 @@ main {
           position: absolute;
           top: 2rem;
           left: -7rem;
-          width: 20vw;
-          height: 20vw;
+          width: 12vw;
+          height: auto;
         }
       }
     }
@@ -1056,7 +1070,8 @@ footer>.shop-div {
   padding: 20px;
   max-width: 100%;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0;
+  */
   /* Lighter border for the container */
   border-radius: 8px;
   /* Slight rounding for a modern card look */
@@ -1088,7 +1103,7 @@ td input {
   width: 50px;
   height: 30px;
   text-align: center;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   /* Subtle border for inputs */
   border-radius: 4px;
   color: aliceblue;
@@ -1119,7 +1134,7 @@ td img {
 }
 
 .total-price table {
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   /* Lighter border for the total price table */
   border-radius: 8px;
   width: 100%;
@@ -1149,13 +1164,13 @@ button:active {
 
 /* Horizontal lines at the end of each cart item */
 tr:not(:last-child) {
-  border-bottom: 1px solid #e0e0e0;
+  /* border-bottom: 1px solid #e0e0e0; */
   /* Light border after each item row */
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #e0e0e0;
+  /* border-top: 1px solid #e0e0e0; */
   /* Light horizontal line */
   margin: 20px 0;
 }
@@ -1262,6 +1277,7 @@ h1 {
 
 
 @media screen and (max-width: 768px) {
+
   .AddressBar>p {
     font-size: 3vw;
     margin-left: 4vw;
@@ -1303,12 +1319,13 @@ h1 {
     display: block;
   }
 
-  .pink-headphones{
+  .pink-headphones {
     display: block;
+    width: 100%;
   }
- 
 
-  
+
+
   .pink-headphones .text h1 {
     font-size: 40px;
     width: 60vw;
@@ -1317,11 +1334,13 @@ h1 {
   .pink-headphones .text p {
     width: 60vw;
   }
-  .why-us{
+
+  .why-us {
     width: 100%;
     display: block;
     height: fit-content;
   }
+
   .product-cards .text h1 {
     font-size: 30px;
   }
@@ -1405,6 +1424,7 @@ h1 {
   }
 
   .product-cards {
+    width: 100%;
     flex-wrap: wrap;
   }
 
@@ -1419,6 +1439,7 @@ h1 {
 
   .pink-headphones {
     flex-direction: column;
+    width: 100%;
   }
 
   .pink-headphones .text h1 {
@@ -1440,7 +1461,8 @@ h1 {
     font-size: 3vw;
     width: 90vw;
   }
-  .text>h2{
+
+  .text>h2 {
     font-size: 30vw;
     width: 90vw;
     margin: 0px;
