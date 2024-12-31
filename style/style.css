@@ -440,7 +440,6 @@ main {
     img {
       top: 70%;
       left: 70%;
-
     }
   }
 }
@@ -1225,10 +1224,10 @@ main {
   }
 
   /* Horizontal lines at the end of each cart item */
-  tr:not(:last-child) {
-    /* border-bottom: 1px solid #e0e0e0; */
-    /* Light border after each item row */
-  }
+  /* tr:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0; */
+  /* Light border after each item row
+  } */
 
   hr {
     border: 0;
@@ -1564,5 +1563,6 @@ main {
       width: 90vw;
     }
   }
+}
 
-  /* ************* section Responsiveness ends here ************* */
+/* ************* section Responsiveness ends here ************* */
