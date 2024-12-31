@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../Images/bg_pic.jpg);
+    background-color: black !important;
+    background-size: cover;
+    background-attachment: fixed;
+    /* border: 2px solid white; */
+    /* font-size: 62.5%; */
+}
+
+/* ************* section Header starts here ************* */
+
+button {
+    font-family: "league gothic";
+}
+
+h1 {
+    font-family: "league gothic";
+}
+
+.AddressBar {
+    width: 100%;
+}
+
+.AddressBar {
+    width: 100%;
+
+    font-family: "league gothic";
+    height: fit-content;
+    padding: 2vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.AddressBar>p {
+    font-family: "league gothic";
+    font-size: 1.15vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "league gothic";
+}
+
+.navbar>a>img {
+    width: 19vw;
+    height: fit-content;
+    margin-left: 9vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar>ul {
+    font-family: "league gothic";
+    display: flex;
+    list-style-type: none;
+    margin-left: 8vw;
+    flex-wrap: wrap;
+}
+
+.navbar>ul>li {
+    margin-left: 6vw;
+    font-size: 1.7vw;
+    font-family: league gothic;
+}
+
+.navbar>ul>li {
+    margin-left: 4vw;
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "league gothic";
+}
+
+.navbar>ul>li>a:hover {
+    color: #ff4955;
+    transition: 0.6s;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: rgb(219, 218, 224);
+}
+
+@media screen and (max-width: 620px) {
+    .AddressBar {
+        width: 100%;
+        height: fit-content;
+        padding: 1vh;
+        background-color: #ff4955;
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .AddressBar>p {
+        font-size: 1.4vw;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(219, 218, 224);
+        display: flex;
+        align-items: center;
+        margin-left: 12vw;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .navbar>a>img {
+        width: 38vw;
+        height: 18vw;
+        margin-left: 9vw;
+        border-radius: 50%;
+    }
+
+    .navbar>ul {
+        display: block;
+        list-style-type: none;
+        margin-left: 8vw;
+    }
+
+    .navbar>ul>li {
+        font-size: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0.3vw;
+        padding: 1vw 0vw;
+    }
+}
+
+/* ************* section Header ends here ************* */
+
+
+/* ************* section Cart page starts here ************* */
+
+.Cart-Page {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid #e0e0e0;
+    */
+    /* Lighter border for the container */
+    border-radius: 8px;
+    /* Slight rounding for a modern card look */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: aliceblue;
+    /* Text color */
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+    color: aliceblue;
+    /* Text color */
+}
+
+td input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    /* border: 1px solid #e0e0e0; */
+    /* Subtle border for inputs */
+    border-radius: 4px;
+    color: aliceblue;
+    /* Text color */
+    background-color: transparent;
+}
+
+td a {
+    font-size: 14px;
+    text-decoration: none;
+    color: aliceblue;
+    /* Text color */
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.total-price table {
+    /* border: 1px solid #e0e0e0; */
+    /* Lighter border for the total price table */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 370px;
+}
+
+button {
+    background-color: #ff4955;
+    border: 1px solid transparent;
+    /* Transparent border for clean look */
+    color: aliceblue;
+    /* Text color */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+/* Horizontal lines at the end of each cart item */
+tr:not(:last-child) {
+    /* border-bottom: 1px solid #e0e0e0; */
+    /* Light border after each item row */
+}
+
+hr {
+    border: 0;
+    /* border-top: 1px solid #e0e0e0; */
+    /* Light horizontal line */
+    margin: 20px 0;
+}
+
+
+/* ************* section Cart page ends here ************* */
+
+
+/* ************* section Footer starts here ************* */
+
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4vw;
+    margin-top: 13vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.footer-img>a>img {
+    width: 22vw;
+    height: 14vh;
+}
+
+footer>.shop-div {
+    margin-left: 6vw;
+}
+
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+    margin-left: 6vw;
+}
+
+.shop-div>h1,
+.company-div>h1,
+.support-div>h1,
+.contact-div>h1 {
+    font-size: 2.3vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+}
+
+.shop-div>ul>li>a,
+.company-div>ul>li>a,
+.support-div>ul>li>a,
+.contact-div>ul>li>a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3vw;
+}
+
+.shop-div>ul>li,
+.company-div>ul>li,
+.support-div>ul>li,
+.contact-div>ul>li {
+    color: aliceblue;
+    font-size: 1.3vw;
+    list-style-type: none;
+    padding-top: 0.7vw;
+    margin-top: 0.7vw;
+}
+
+.shop-div>ul>h3,
+.company-div>ul>h3,
+.support-div>ul>h3,
+.contact-div>ul>h3 {
+    font-size: 1.4vw;
+    color: aliceblue;
+    text-shadow: 1px 1px #ff4955;
+    margin-top: 1vw;
+}
+
+@media screen and (max-width: 620px) {
+    footer {
+        width: 100%;
+        height: fit-content;
+        padding: 4vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .footer-img>img {
+        width: 38vw;
+        height: 13vh;
+    }
+
+    footer>.shop-div {
+        margin-left: 6vw;
+    }
+
+    .shop-div,
+    .company-div,
+    .support-div,
+    .contact-div {
+        margin: 9vw 0vw 0vw 6vw;
+    }
+
+    .shop-div>h1,
+    .company-div>h1,
+    .support-div>h1,
+    .contact-div>h1 {
+        font-size: 4.5vw;
+        color: #ff4955;
+        margin-bottom: 1vw;
+    }
+
+    .shop-div>ul>li>a,
+    .company-div>ul>li>a,
+    .support-div>ul>li>a,
+    .contact-div>ul>li>a {
+        text-decoration: none;
+        color: #f0f8ff;
+        font-size: 3vw;
+    }
+
+    .shop-div>ul>li,
+    .company-div>ul>li,
+    .support-div>ul>li,
+    .contact-div>ul>li {
+        color: aliceblue;
+        font-size: 3vw;
+        list-style-type: none;
+        padding-top: 1.2vw;
+        margin-top: 0.7vw;
+    }
+
+    .shop-div>ul>h3,
+    .company-div>ul>h3,
+    .support-div>ul>h3,
+    .contact-div>ul>h3 {
+        font-size: 3.5vw;
+        color: aliceblue;
+        text-shadow: 0.15vw 0.15vw #ff4955;
+        margin-top: 3vw;
+    }
+}
+
+/* ************* section Footer ends here ************* */

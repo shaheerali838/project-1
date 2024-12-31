@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../Images/bg_pic.jpg);
+    background-color: black !important;
+    background-size: cover;
+    background-attachment: fixed;
+    /* border: 2px solid white; */
+    /* font-size: 62.5%; */
+}
+
+/* ************* section Header starts here ************* */
+
+button {
+    font-family: "league gothic";
+}
+
+h1 {
+    font-family: "league gothic";
+}
+
+.AddressBar {
+    width: 100%;
+}
+
+.AddressBar {
+    width: 100%;
+
+    font-family: "league gothic";
+    height: fit-content;
+    padding: 2vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.AddressBar>p {
+    font-family: "league gothic";
+    font-size: 1.15vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "league gothic";
+}
+
+.navbar>a>img {
+    width: 19vw;
+    height: fit-content;
+    margin-left: 9vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar>ul {
+    font-family: "league gothic";
+    display: flex;
+    list-style-type: none;
+    margin-left: 8vw;
+    flex-wrap: wrap;
+}
+
+.navbar>ul>li {
+    margin-left: 6vw;
+    font-size: 1.7vw;
+    font-family: league gothic;
+}
+
+.navbar>ul>li {
+    margin-left: 4vw;
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "league gothic";
+}
+
+.navbar>ul>li>a:hover {
+    color: #ff4955;
+    transition: 0.6s;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: rgb(219, 218, 224);
+}
+
+@media screen and (max-width: 620px) {
+    .AddressBar {
+        width: 100%;
+        height: fit-content;
+        padding: 1vh;
+        background-color: #ff4955;
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .AddressBar>p {
+        font-size: 1.4vw;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(219, 218, 224);
+        display: flex;
+        align-items: center;
+        margin-left: 12vw;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .navbar>a>img {
+        width: 38vw;
+        height: 18vw;
+        margin-left: 9vw;
+        border-radius: 50%;
+    }
+
+    .navbar>ul {
+        display: block;
+        list-style-type: none;
+        margin-left: 8vw;
+    }
+
+    .navbar>ul>li {
+        font-size: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0.3vw;
+        padding: 1vw 0vw;
+    }
+}
+
+/* ************* section Header ends here ************* */
+
+/* ************* section about us starts here ************* */
+
+.done {
+    background-color: black;
+}
+
+main {
+    background-color: rgb(197, 191, 191);
+    /* font-family: sans-serif; */
+}
+
+.wasi {
+    /* color: white; */
+    width: 100%;
+    height: 60vh;
+    background-image: url(../Images/img1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-size: 2vw;
+    font-family: sans-serif;
+}
+
+.wasi h1 {
+    color: black;
+    margin-top: 20px;
+    font-size: 10vw;
+}
+
+.hmz {
+    background-color: black !important;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    /* color: white; */
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: sans-serif;
+}
+
+.ok h1 {
+    border: none;
+    margin-bottom: 2vw;
+    letter-spacing: .5vw;
+    font-size: 8vw;
+}
+
+.ok>h2 {
+    font-size: 3vw;
+}
+
+.ok {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 5vw 3vw 0vw 3vw;
+    text-align: center;
+    font-family: sans-serif;
+    /* padding-right: 50px; */
+}
+
+.pc {
+    font-family: sans-serif;
+    background-image: url(../Images/img2.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 50vw;
+    height: 60vh;
+    /* border: 1px solid blue; */
+}
+
+.team {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vw;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+    margin-bottom: 20vw;
+    overflow: hidden;
+    background-color: black !important;
+}
+
+.hedp {
+    font-family: sans-serif;
+    margin-left: 5vw;
+    /* border: 1px solid yellow; */
+    text-align: center;
+    color: white;
+}
+
+.hedp h3 {
+    font-size: 2.4vw;
+}
+
+.hedp h1 {
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 9vw;
+    margin-bottom: 2vh;
+}
+
+.hedp p {
+    font-size: 2vw;
+    width: 70vw;
+    height: 20vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    line-height: 3vw;
+}
+
+.pics {
+    font-family: sans-serif;
+    margin-top: 3vw;
+    width: 70vw;
+    height: 50vh;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.same {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: .5vw;
+    color: black;
+    /* border: 2px solid yellow; */
+    width: 23vw;
+    height: 15vw;
+    font-family: sans-serif;
+}
+
+.same i {
+    position: relative;
+    font-size: 2vw;
+    top: -2vw;
+    left: 2vw;
+}
+
+.pics>div>i {
+    position: relative;
+    left: 50px;
+}
+
+
+
+.FOLLOW {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../Images/img3.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 90vh;
+    font-family: sans-serif;
+    margin-top: 30vh;
+}
+
+.us {
+    font-family: sans-serif;
+    background-color: white;
+    width: 26vw;
+    height: 90vh;
+    margin: auto;
+    border: 1px solid blue;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.us>h2 {
+    font-size: 5vw;
+}
+
+.icon ul {
+    margin-top: 3vh;
+}
+
+.icon li {
+    padding-left: 1vw;
+    display: inline;
+}
+
+.icon>ul>li>i {
+    font-size: 3vw;
+}
+
+.world {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.world>div>i {
+    font-size: 5vw;
+}
+
+
+/* ************* section about us ends here ************* */
+
+/* ************* section Footer starts here ************* */
+
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4vw;
+    margin-top: 13vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.footer-img>a>img {
+    width: 22vw;
+    height: 14vh;
+}
+
+footer>.shop-div {
+    margin-left: 6vw;
+}
+
+.shop-div,
+.company-div,
+.support-div,
+.contact-div {
+    margin-left: 6vw;
+}
+
+.shop-div>h1,
+.company-div>h1,
+.support-div>h1,
+.contact-div>h1 {
+    font-size: 2.3vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+}
+
+.shop-div>ul>li>a,
+.company-div>ul>li>a,
+.support-div>ul>li>a,
+.contact-div>ul>li>a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3vw;
+}
+
+.shop-div>ul>li,
+.company-div>ul>li,
+.support-div>ul>li,
+.contact-div>ul>li {
+    color: aliceblue;
+    font-size: 1.3vw;
+    list-style-type: none;
+    padding-top: 0.7vw;
+    margin-top: 0.7vw;
+}
+
+.shop-div>ul>h3,
+.company-div>ul>h3,
+.support-div>ul>h3,
+.contact-div>ul>h3 {
+    font-size: 1.4vw;
+    color: aliceblue;
+    text-shadow: 1px 1px #ff4955;
+    margin-top: 1vw;
+}
+
+@media screen and (max-width: 620px) {
+    footer {
+        width: 100%;
+        height: fit-content;
+        padding: 4vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .footer-img>img {
+        width: 38vw;
+        height: 13vh;
+    }
+
+    footer>.shop-div {
+        margin-left: 6vw;
+    }
+
+    .shop-div,
+    .company-div,
+    .support-div,
+    .contact-div {
+        margin: 9vw 0vw 0vw 6vw;
+    }
+
+    .shop-div>h1,
+    .company-div>h1,
+    .support-div>h1,
+    .contact-div>h1 {
+        font-size: 4.5vw;
+        color: #ff4955;
+        margin-bottom: 1vw;
+    }
+
+    .shop-div>ul>li>a,
+    .company-div>ul>li>a,
+    .support-div>ul>li>a,
+    .contact-div>ul>li>a {
+        text-decoration: none;
+        color: #f0f8ff;
+        font-size: 3vw;
+    }
+
+    .shop-div>ul>li,
+    .company-div>ul>li,
+    .support-div>ul>li,
+    .contact-div>ul>li {
+        color: aliceblue;
+        font-size: 3vw;
+        list-style-type: none;
+        padding-top: 1.2vw;
+        margin-top: 0.7vw;
+    }
+
+    .shop-div>ul>h3,
+    .company-div>ul>h3,
+    .support-div>ul>h3,
+    .contact-div>ul>h3 {
+        font-size: 3.5vw;
+        color: aliceblue;
+        text-shadow: 0.15vw 0.15vw #ff4955;
+        margin-top: 3vw;
+    }
+}
+
+/* ************* section Footer ends here ************* */
