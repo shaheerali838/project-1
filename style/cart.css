@@ -30,6 +30,18 @@ h1 {
     font-family: "league gothic";
 }
 
+
+.preloader {
+
+    background: black url(../Images/Pendulum.gif) no-repeat center center;
+    height: 100vh;
+
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
 .AddressBar {
     width: 100%;
 }
@@ -278,8 +290,8 @@ button:active {
 
 /* Horizontal lines at the end of each cart item */
 tr:not(:last-child) {
-    /* border-bottom: 1px solid #e0e0e0; */
-    /* Light border after each item row */
+    border-bottom: 1px solid #e0e0e0;
+    /* Light border after each item row; */
 }
 
 hr {

@@ -13,6 +13,11 @@
 </head>
 
 <body>
+
+  <!--    ************* section Preloader starts here ************* -->
+  <div class="preloader"></div>
+  <!--    ************* section Preloader ends here ************* -->
+
   <header>
     <div class="AddressBar">
       <p>Address: SMIT Center, Peshawar</p>
@@ -166,6 +171,14 @@
       </ul>
     </div>
   </footer>
+  <script>
+    var preloader = document.querySelector(".preloader");
+    window.addEventListener("load", function () {
+      preloader.style.display = "none";
+    });
+
+  </script>
+
 </body>
 
 </html>

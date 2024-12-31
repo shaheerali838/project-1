@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+
+.preloader {
+
+  background: black url(../Images/Pendulum.gif) no-repeat center center;
+  height: 100vh;
+
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../Images/bg_pic.jpg);

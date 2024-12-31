@@ -13,6 +13,11 @@
 </head>
 
 <body>
+
+  <!--    ************* section Preloader starts here ************* -->
+  <div class="preloader"></div>
+  <!--    ************* section Preloader ends here ************* -->
+
   <!--    ************* section Header starts here ************* -->
   <header>
     <div class="AddressBar">
@@ -431,6 +436,15 @@
     </div>
   </footer>
   <!--    ************* section Footer ends here ************* -->
+
+  <script>
+    var preloader = document.querySelector(".preloader");
+    window.addEventListener("load", function () {
+      preloader.style.display = "none";
+    });
+
+  </script>
+
 </body>
 
 </html>
