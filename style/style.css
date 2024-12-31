@@ -191,6 +191,8 @@ h1 {
 
 @media screen and (max-width: 860px) {
   main {
+    width: 100%;
+
     .text {
       display: flex;
       flex-direction: column;
@@ -211,19 +213,18 @@ h1 {
 
     .ad {
       display: block;
+      justify-content: center;
 
       img {
-        top: 70%;
-        left: 70%;
-        /* transform: translate(-50%, -50%); */
-        /* -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%); */
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+        height: auto;
       }
     }
   }
 }
+
 
 main {
   background-color: black;
@@ -295,63 +296,6 @@ main {
 
 
 
-/* Responsiveness Of Aboutus page */
-@media screen and (max-width:920px) {
-  .hmz {
-    background-color: black !important;
-    color: white;
-    height: fit-content;
-    width: 100%;
-    margin: 17vh 0vw 0vw 0vw;
-    display: block;
-  }
-
-  .ok {
-    width: 50vw;
-    margin: 0px 0px 0px 5vw;
-    display: flex;
-  }
-
-  .pc {
-    background-size: 50vw 40vh;
-    width: 50vw;
-    height: 40vh;
-    margin: 0px 0px 0px 25vw;
-    padding: 0px;
-  }
-
-  .pics {
-    font-family: sans-serif;
-    margin-top: 3vw;
-    width: 90vw;
-    height: 50vh;
-    margin-left: 10vw;
-    padding-left: 0px;
-    /* background-color: red; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .pics>div>i {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width:620px) {
-  .FOLLOW {
-    height: 50vh;
-    background-size: 100% 50vh;
-    margin-top: 10vh;
-  }
-
-  .us {
-    height: 50vh;
-  }
-
-  .us>h2 {
-    font-size: 5vw;
-  }
-}
 
 /* ************* section Main ends here************* */
 
@@ -476,6 +420,32 @@ main {
       color: #ff4955;
     }
   }
+}
+
+@media screen and (max-width:860px) {
+  .product-cards {
+    .cards {
+      display: block;
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 2vw;
+      width: fit-content;
+
+      .card {
+        display: block;
+        width: 100%;
+
+        img {
+          width: 80%;
+          aspect-ratio: 1;
+          object-fit: cover;
+          margin: 0% auto;
+        }
+      }
+    }
+  }
+
+
 }
 
 /* ************* section Product cards ends here ************* */
