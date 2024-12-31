@@ -65,6 +65,7 @@ h1 {
   left: 0;
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   width: 100%;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.3);
@@ -113,6 +114,25 @@ h1 {
 .navbar>ul>li>a {
   text-decoration: none;
   color: rgb(219, 218, 224);
+}
+
+.navbar button {
+  margin-left: auto;
+  /* padding: 1rem 2rem; */
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  border: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(255, 73, 85);
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #ff4955;
+  color: black;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 620px) {
@@ -170,6 +190,11 @@ h1 {
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0.3vw;
     padding: 1vw 0vw;
+  }
+
+  .navbar .nav-button {
+    width: 100%;
+    margin: 1rem 0;
   }
 }
 
@@ -352,7 +377,7 @@ main {
       flex-direction: column;
       justify-content: center;
       width: fit-content;
-
+      background-color: #0000;
       align-items: center;
 
       .txt {
