@@ -29,21 +29,20 @@ h1 {
   font-family: "league gothic";
 }
 
-.AddressBar {
+/* .AddressBar {
   width: 100%;
-}
+} */
 
 .AddressBar {
   width: 100%;
-
+  margin-bottom: 0;
   font-family: "league gothic";
-  height: fit-content;
+  /* height: fit-content; */
+  height: 1vh;
   padding: 2vh;
   background-color: #ff4955;
   display: flex;
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .AddressBar>p {
@@ -118,7 +117,6 @@ h1 {
 
 .navbar button {
   margin-left: auto;
-  /* padding: 1rem 2rem; */
   margin-right: 3rem;
   margin-bottom: 1rem;
   border: none;
