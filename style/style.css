@@ -38,7 +38,7 @@ h1 {
   margin-bottom: 0;
   font-family: "league gothic";
   /* height: fit-content; */
-  height: 1vh;
+  height: 20px;
   padding: 2vh;
   background-color: #ff4955;
   display: flex;
