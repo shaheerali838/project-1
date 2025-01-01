@@ -1004,25 +1004,19 @@ footer>.shop-div {
   }
 
   .pink-headphones {
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
     padding: 0;
-    justify-content: center;
-    align-items: center;
 
     .pics {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
       margin: 0 auto;
 
       .img1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
         width: 100%;
+        margin: 0 auto;
 
         img {
           width: 75%;
