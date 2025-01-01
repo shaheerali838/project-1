@@ -29,15 +29,11 @@ h1 {
   font-family: "league gothic";
 }
 
-/* .AddressBar {
-  width: 100%;
-} */
 
 .AddressBar {
   width: 100%;
   margin-bottom: 0;
   font-family: "league gothic";
-  /* height: fit-content; */
   height: 20px;
   padding: .8rem;
   background-color: #ff4955;
