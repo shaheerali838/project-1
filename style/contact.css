@@ -193,68 +193,67 @@ h1 {
 h1 {
     text-align: center;
     color: white;
-    font-size: 70px;
+    font-size: 7vw;
 }
 
 .main {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
 .para {
-    width: 530px;
+    width: 50vw;
     color: white;
 }
 
 .form {
-    width: 530px;
+    width: 50vw;
 }
 
 .Hamza {
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 .hmza {
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .info p {
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .infoHead {
     color: rgb(252, 55, 70);
     font-weight: 800;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 2.2vw;
+    margin-bottom: 2.2vw;
 }
 
 .p {
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 /* form starts*/
 .HAmza {
     color: white;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .HAMZA {
-    height: 50px;
-    width: 200px;
+    height: 5vw;
+    width: 19vw;
 }
 
 .emaill {
     height: 5vw;
-    width: 42vwx;
+    width: 42vw;
 }
 
 .button {
     height: 3vw;
     border: none;
     border-radius: 10px;
-    width: 130px;
+    width: 14vw;
     background-color: rgb(252, 55, 70);
     color: white;
     font-size: 1.4vw;
@@ -277,6 +276,20 @@ h1 {
         justify-content: center;
         height: 40vw;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main{
+        display: block;
+        margin-left: 18vw;
+    }
+    .para{
+        width: 60vw;
+    }
+    .form{
+        width: 60vw;
+        margin: 12vw 0vw 0vw 0vw;
     }
 }
 
@@ -365,9 +378,9 @@ footer>.shop-div {
         text-align: center;
     }
 
-    .footer-img>img {
-        width: 38vw;
-        height: 13vh;
+    .footer-img>a>img {
+        width:45vw;
+        height: 10vh;
     }
 
     footer>.shop-div {

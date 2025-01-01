@@ -235,17 +235,6 @@ main {
     font-family: sans-serif;
 }
 
-.ok h1 {
-    border: none;
-    margin-bottom: 2vw;
-    letter-spacing: .5vw;
-    font-size: 8vw;
-}
-
-.ok>h2 {
-    font-size: 3vw;
-}
-
 .ok {
     width: fit-content;
     height: fit-content;
@@ -255,6 +244,17 @@ main {
     text-align: center;
     font-family: sans-serif;
     /* padding-right: 50px; */
+}
+
+.ok h1 {
+    border: none;
+    margin-bottom: 2vw;
+    letter-spacing: .5vw;
+    font-size: 8vw;
+}
+
+.ok>h2 {
+    font-size: 3vw;
 }
 
 .pc {
@@ -398,7 +398,7 @@ main {
     background-color: black;
     color: white;
     justify-content: center;
-    margin: auto;
+    margin: 2vw;
     width: 100%;
     height: 50vh;
     overflow: hidden;
@@ -421,7 +421,7 @@ main {
 
     .ok {
         width: 50vw;
-        margin: 0px 0px 0px 5vw;
+        margin: 0px 0px 0px 25vw;
         display: flex;
     }
 
