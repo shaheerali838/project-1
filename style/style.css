@@ -15,7 +15,7 @@ body {
   background-color: black !important;
   background-size: cover;
   background-attachment: fixed;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   /* font-size: 62.5%; */
 }
 
@@ -38,10 +38,11 @@ h1 {
   margin-bottom: 0;
   font-family: "league gothic";
   /* height: fit-content; */
-  height: 2.4vw;
+  height: 20px;
   padding: .8rem;
   background-color: #ff4955;
   display: flex;
+  position: relative;
 }
 
 .AddressBar>p {
@@ -53,7 +54,6 @@ h1 {
   display: flex;
   align-items: center;
   margin-left: 12vw;
-  margin-top: .4vw;
 }
 
 .navbar {
@@ -67,7 +67,7 @@ h1 {
   /* justify-content: center; */
   width: 100%;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   font-family: "league gothic";
 }
 
@@ -121,7 +121,7 @@ h1 {
   margin-bottom: 1rem;
   border: none;
   color: aliceblue;
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 400;
   background-color: rgb(255, 73, 85);
   cursor: pointer;
@@ -132,10 +132,6 @@ h1 {
   color: black;
   transition: 0.3s;
 }
-.modalBTN{
-  padding: .5vw 3vw .5vw 3vw;
-  font-size: 5vw; 
-} 
 
 @media screen and (max-width: 620px) {
   .AddressBar {
@@ -198,7 +194,6 @@ h1 {
     width: 250px;
     margin: 1rem 0;
   }
-  
 }
 
 /* ************* section Header ends here ************* */
@@ -288,10 +283,10 @@ main {
 }
 
 .text h1 {
-  width: 36vw;
+  width: 30vw;
   font-weight: 400;
   font-size: 7vw;
-  line-height: 7.5vw;
+  line-height: 5.5vw;
   font-family: "League Gothic";
   text-align: left;
 }
@@ -309,7 +304,7 @@ main {
   padding: 1rem 2rem;
   border: none;
   color: aliceblue;
-  font-size: 2vw;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 400;
   background-color: rgb(255, 73, 85);
@@ -357,6 +352,8 @@ main {
     }
 
     h1 {
+      width: 80%;
+      line-height: 1;
       color: aliceblue;
       font-weight: 400;
       text-transform: capitalize;
@@ -505,7 +502,7 @@ main {
       text-transform: uppercase;
       color: aliceblue;
       font-size: 78px;
-      line-height: 62px;
+      line-height: .8;
       width: 35vw;
       font-weight: 400;
       font-family: "league gothic";
@@ -526,7 +523,7 @@ main {
 
     button {
       left: 10;
-      width: 11vw;
+      width: 12vw;
       text-transform: uppercase;
       display: flex;
       justify-content: center;
@@ -774,7 +771,7 @@ footer {
   height: fit-content;
   padding: 4vw;
   margin-top: 13vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   bottom: 0;
   left: 0;
@@ -841,7 +838,7 @@ footer>.shop-div {
     width: 100%;
     height: fit-content;
     padding: 4vw;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     bottom: 0;
     left: 0;
@@ -903,7 +900,7 @@ footer>.shop-div {
     text-shadow: 0.15vw 0.15vw #ff4955;
     margin-top: 3vw;
   }
-  
+
 
   main {
     height: fit-content;
@@ -1023,8 +1020,8 @@ footer>.shop-div {
         width: 100%;
         margin: 0 auto;
 
-        .c1 {
-          width: 100%;
+        img {
+          width: 75%;
           height: auto;
         }
       }
@@ -1094,66 +1091,25 @@ footer>.shop-div {
 /* ************* section Responsiveness starts here ************* */
 
 
-@media screen and (max-width: 820px) {
-  .AddressBar {
-    width: 100%;
-    height: fit-content;
-    padding: 1vh;
-    background-color: #ff4955;
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+@media screen and (max-width: 768px) {
 
   .AddressBar>p {
-    font-size: 1.4vw;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(219, 218, 224);
-    display: flex;
-    align-items: center;
-    margin-left: 12vw;
-  }
-
-  .navbar {
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: block;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
+    font-size: 3vw;
+    margin-left: 4vw;
   }
 
   .navbar>a>img {
-    width: 38vw;
-    height: 18vw;
-    margin-left: 9vw;
-    border-radius: 50%;
+    width: 35vw;
+    margin-left: 4vw;
   }
 
   .navbar>ul {
-    display: block;
-    list-style-type: none;
-    margin-left: 8vw;
+    margin-left: 4vw;
   }
 
   .navbar>ul>li {
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0.3vw;
-    padding: 1vw 0vw;
-  }
-
-  .navbar button {
-    width: 250px;
-    margin: 1rem 0;
+    margin-left: 1.5vw;
+    font-size: 4vw;
   }
 
   main .ad .text h1 {
@@ -1183,6 +1139,7 @@ footer>.shop-div {
 
   .product-cards .cards {
     display: block;
+
   }
 
   .pink-headphones {
@@ -1201,14 +1158,18 @@ footer>.shop-div {
         width: 100%;
         margin: 0 auto;
 
-        .c1 {
-          width: 55vw;
-          height: 80vh;
-          margin-left: 14vw;
+        img {
+
+          aspect-ratio: 1;
+          display: block;
+          margin: 0 auto;
+          height: auto;
+          object-fit: cover;
+          width: 100%;
         }
 
         .img2 {
-          .c2 {
+          img {
             display: none;
             width: 20vw;
             height: 20vh;
@@ -1466,7 +1427,10 @@ footer>.shop-div {
       width: 100%;
     }
 
-    
+    button {
+      width: 25vw;
+      margin: 0 auto;
+    }
 
 
   }
@@ -1500,12 +1464,854 @@ footer>.shop-div {
     text-align: center;
     width: 100%;
   }
-  .modalBTN{
+}
+
+/* ************* section Responsiveness starts here ************* */
+
+@media screen and (max-width: 620px) {
+  .AddressBar {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .AddressBar>p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+  }
+
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .navbar>a>img {
+    width: 38vw;
+    height: 18vw;
+    margin-left: 9vw;
+    border-radius: 50%;
+  }
+
+  .navbar>ul {
+    display: block;
+    list-style-type: none;
+    margin-left: 8vw;
+  }
+
+  .navbar>ul>li {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.3vw;
+    padding: 1vw 0vw;
+  }
+
+  .navbar button {
+    width: 250px;
+    margin: 1rem 0;
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      padding: 0 2rem 1rem 2rem;
+      margin: 0 1rem 0 1rem;
+
+      h1 {
+        width: 100%;
+
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .ad {
+      display: block;
+      justify-content: center;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 620px) {
+  footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-img>img {
+    width: 38vw;
+    height: 13vh;
+  }
+
+  footer>.shop-div {
+    margin-left: 6vw;
+  }
+
+  .shop-div,
+  .company-div,
+  .support-div,
+  .contact-div {
+    margin: 9vw 0vw 0vw 6vw;
+  }
+
+  .shop-div>h1,
+  .company-div>h1,
+  .support-div>h1,
+  .contact-div>h1 {
+    font-size: 4.5vw;
+    color: #ff4955;
+    margin-bottom: 1vw;
+  }
+
+  .shop-div>ul>li>a,
+  .company-div>ul>li>a,
+  .support-div>ul>li>a,
+  .contact-div>ul>li>a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 3vw;
+  }
+
+  .shop-div>ul>li,
+  .company-div>ul>li,
+  .support-div>ul>li,
+  .contact-div>ul>li {
+    color: aliceblue;
+    font-size: 3vw;
+    list-style-type: none;
+    padding-top: 1.2vw;
+    margin-top: 0.7vw;
+  }
+
+  .shop-div>ul>h3,
+  .company-div>ul>h3,
+  .support-div>ul>h3,
+  .contact-div>ul>h3 {
+    font-size: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.15vw 0.15vw #ff4955;
+    margin-top: 3vw;
+  }
+
+
+  main {
+    height: fit-content;
+
+    .ad {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+
+      .text {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+  }
+
+
+
+  .product-cards {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+
+    .card {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    /* flex-direction: column; */
+    width: 100%;
+    padding: 0;
+
+    .pics {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      .img1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+        .c1 {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .pink-headphones .text {
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* width: 100%; */
+
+    p {
+      text-align: center;
+      width: 100%;
+    }
+
+    button {
+      width: 25vw;
+      margin: 0 auto;
+    }
+
+
+  }
+
+  .why h1 {
+    font-size: 3vw;
+    width: 70vw;
+  }
+
+  .main .text h1 {
+    font-size: 6vw;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .main .text h2 {
+    text-align: center;
+    font-size: 6vw;
+    width: 90vw;
+  }
+
+  .text>h2 {
+    font-size: 5vw;
+    width: 90vw;
+    margin: 0px;
+  }
+
+  .main .text p {
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .AddressBar {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+    background-color: #ff4955;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .AddressBar>p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 218, 224);
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+  }
+
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .navbar>a>img {
+    width: 38vw;
+    height: 18vw;
+    margin-left: 9vw;
+    border-radius: 50%;
+  }
+
+  .navbar>ul {
+    display: block;
+    list-style-type: none;
+    margin-left: 8vw;
+  }
+
+  .navbar>ul>li {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.3vw;
+    padding: 1vw 0vw;
+  }
+
+  .navbar button {
+    width: 250px;
+    margin: 1rem 0;
+  }
+
+  main {
+    padding: auto;
+    width: fit-content;
+    height: fit-content;
+
+    .ad {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+
+      .text {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+  }
+
+
+
+  .product-cards {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+
+    .card {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pics {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      .img1 {
+        display: flex;
+        justify-content: center;
+
+
+
+        .c1 {
+          width: 60%;
+          height: auto;
+        }
+
+        .img2 {
+          .c2 {
+            display: none;
+            width: 20%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 150px;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+
+
+  }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .AddressBar>p {
+    font-size: 4vw;
+    margin-left: 3vw;
+  }
+
+  .navbar>a>img {
+    width: 40vw;
+    margin-left: 3vw;
+  }
+
+  .navbar>ul {
+    margin-left: 3vw;
+  }
+
+  .navbar>ul>li {
+    margin-left: 1vw;
+    font-size: 5vw;
+  }
+
+  main {
+    .ad {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+
+      .text {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+  }
+
+
+
+  .product-cards {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 1rem 1rem 1rem 1rem;
+      width: 100%;
+
+      h2 {
+
+        font-size: 4vw;
+      }
+    }
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+
+    .card {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    /* flex-direction: column; */
+    width: 100%;
+    padding: 0;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      margin-top: auto;
+
+      button {
+        width: 150px;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+      }
+    }
+
+
+    .pics {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      .img1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+          width: 75%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .pink-headphones .text {
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* width: 100%; */
+
+    p {
+      text-align: center;
+      width: 100%;
+    }
+
+
+
+
+  }
+
+
+
+  .why h1 {
+    font-size: 7vw;
+    width: 70vw;
+  }
+
+  .why h2 {
+    font-size: 4vw;
+    width: 70vw;
+  }
+
+  .main .text h1 {
+    font-size: 6vw;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .main .text h2 {
+    text-align: center;
+    font-size: 6vw;
+    width: 90vw;
+  }
+
+  .text>h2 {
+    font-size: 5vw;
+    width: 90vw;
+    margin: 0px;
+  }
+
+  .main .text p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .modalBTN {
     width: fit-content;
     height: fit-content;
     padding: 2vw 20vw 2vw 20vw;
     width: 10vw;
   }
 }
+
 
 /* ************* section Responsiveness ends here ************* */
