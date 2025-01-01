@@ -39,7 +39,7 @@ h1 {
   font-family: "league gothic";
   /* height: fit-content; */
   height: 20px;
-  padding: 2vh;
+  padding: .8rem;
   background-color: #ff4955;
   display: flex;
   position: relative;
@@ -190,8 +190,8 @@ h1 {
     padding: 1vw 0vw;
   }
 
-  .navbar .nav-button {
-    width: 100%;
+  .navbar button {
+    width: 250px;
     margin: 1rem 0;
   }
 }
@@ -521,8 +521,11 @@ main {
 
     button {
       left: 10;
-      width: 10vw;
+      width: 11vw;
       text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 2rem;
       padding: 1rem 2rem;
       border: none;
@@ -536,6 +539,11 @@ main {
       -moz-transition: linear 0.3s;
       -ms-transition: linear 0.3s;
       -o-transition: linear 0.3s;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
     }
 
     button:hover {
@@ -890,6 +898,196 @@ footer>.shop-div {
     text-shadow: 0.15vw 0.15vw #ff4955;
     margin-top: 3vw;
   }
+
+
+  main {
+    height: fit-content;
+
+    .ad {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+
+      .text {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+  }
+
+
+
+  .product-cards {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-cards .cards {
+    grid-template-columns: auto;
+
+    .card {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .product-cards .cards img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-headphones {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    .pics {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      .img1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        img {
+          width: 75%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .pink-headphones .text {
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* width: 100%; */
+
+    p {
+      text-align: center;
+      width: 100%;
+    }
+
+    button {
+      width: 25vw;
+      margin: 0 auto;
+    }
+
+
+  }
+
+  .why h1 {
+    font-size: 3vw;
+    width: 70vw;
+  }
+
+  .main .text h1 {
+    font-size: 6vw;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .main .text h2 {
+    text-align: center;
+    font-size: 6vw;
+    width: 90vw;
+  }
+
+  .text>h2 {
+    font-size: 5vw;
+    width: 90vw;
+    margin: 0px;
+  }
+
+  .main .text p {
+    text-align: center;
+    width: 100%;
+  }
+
 }
 
 /* ************* section Footer ends here ************* */
@@ -932,8 +1130,15 @@ footer>.shop-div {
     flex-wrap: wrap;
   }
 
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
   .product-cards .text h1 {
     font-size: 40px;
+    width: 100%;
   }
 
   .product-cards .cards {
@@ -952,13 +1157,23 @@ footer>.shop-div {
       padding: 0;
 
       .img1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
         img {
-          width: 50vw;
-          height: 40vh;
+
+          aspect-ratio: 1;
+          display: block;
+          margin: 0 auto;
+          height: auto;
+          object-fit: cover;
+          width: 100%;
         }
 
         .img2 {
           img {
+            display: none;
             width: 20vw;
             height: 20vh;
           }
@@ -1034,11 +1249,20 @@ footer>.shop-div {
 
   .main .text h1 {
     font-size: 4vw;
-    width: 80vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .main .text p {
-    width: 80vw;
+    width: 60vw;
   }
 }
 
@@ -1062,27 +1286,100 @@ footer>.shop-div {
     font-size: 5vw;
   }
 
-  main .ad .text h1 {
-    width: 70vw;
-    font-size: 3vw;
-    line-height: 3vw;
+  main {
+    .ad {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+
+      .text {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
-  main .ad .text p {
-    width: 70vw;
+  .product-cards .text {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
   }
 
-  .product-cards .text h1 {
-    font-size: 5vw;
-  }
+
 
   .product-cards {
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .product-cards .cards {
     grid-template-columns: auto;
+
+    .card {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .product-cards .cards img {
@@ -1091,18 +1388,56 @@ footer>.shop-div {
   }
 
   .pink-headphones {
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
+    padding: 0;
+
+    .pics {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      .img1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+          width: 75%;
+          height: auto;
+        }
+      }
+    }
   }
 
-  .pink-headphones .text h1 {
-    font-size: 3vw;
-    width: 70vw;
+  .pink-headphones .text {
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* width: 100%; */
+
+    p {
+      text-align: center;
+      width: 100%;
+    }
+
+    button {
+      width: 25vw;
+      margin: 0 auto;
+    }
+
+
   }
 
-  .pink-headphones .text p {
-    width: 70vw;
-  }
 
 
   .why h1 {
@@ -1111,18 +1446,26 @@ footer>.shop-div {
   }
 
   .main .text h1 {
-    font-size: 3vw;
+    font-size: 6vw;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .main .text h2 {
+    text-align: center;
+    font-size: 6vw;
     width: 90vw;
   }
 
   .text>h2 {
-    font-size: 30vw;
+    font-size: 5vw;
     width: 90vw;
     margin: 0px;
   }
 
   .main .text p {
-    width: 90vw;
+    text-align: center;
+    width: 100%;
   }
 }
 
