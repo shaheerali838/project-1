@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "league gothic";
 }
 
 html,
@@ -23,6 +24,9 @@ body {
 
 button {
   font-family: "league gothic";
+}
+button:focus {
+  outline: none;
 }
 
 h1 {
@@ -52,82 +56,6 @@ h1 {
   margin-left: 12vw;
 }
 
-.navbar {
-  display: flex;
-  position: sticky;
-  flex-wrap: wrap;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  width: 100%;
-  height: fit-content;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-family: "league gothic";
-}
-
-.navbar>a>img {
-  width: 19vw;
-  height: fit-content;
-  margin-left: 9vw;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.navbar>ul {
-  font-family: "league gothic";
-  display: flex;
-  list-style-type: none;
-  margin-left: 8vw;
-  flex-wrap: wrap;
-}
-
-.navbar>ul>li {
-  margin-left: 6vw;
-  font-size: 1.7vw;
-  font-family: league gothic;
-}
-
-.navbar>ul>li {
-  margin-left: 4vw;
-  font-size: 1.4vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  font-family: "league gothic";
-}
-
-.navbar>ul>li>a:hover {
-  color: #ff4955;
-  transition: 0.6s;
-}
-
-.navbar>ul>li>a {
-  text-decoration: none;
-  color: rgb(219, 218, 224);
-}
-
-.navbar button {
-  margin-left: auto;
-  margin-right: 3rem;
-  margin-bottom: 1rem;
-  border: none;
-  color: aliceblue;
-  font-size: 20px;
-  font-weight: 400;
-  background-color: rgb(255, 73, 85);
-  cursor: pointer;
-}
-
-.navbar button:hover {
-  background-color: #ff4955;
-  color: black;
-  transition: 0.3s;
-}
 
 @media screen and (max-width: 620px) {
   .AddressBar {
@@ -151,45 +79,6 @@ h1 {
     margin-left: 12vw;
   }
 
-  .navbar {
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: block;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-
-  .navbar>a>img {
-    width: 38vw;
-    height: 18vw;
-    margin-left: 9vw;
-    border-radius: 50%;
-  }
-
-  .navbar>ul {
-    display: block;
-    list-style-type: none;
-    margin-left: 8vw;
-  }
-
-  .navbar>ul>li {
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0.3vw;
-    padding: 1vw 0vw;
-  }
-
-  .navbar button {
-    width: 250px;
-    margin: 1rem 0;
-  }
 }
 
 /* ************* section Header ends here ************* */
