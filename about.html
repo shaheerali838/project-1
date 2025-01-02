@@ -36,16 +36,14 @@
         top: 0;
         left: 0;
         z-index: 100;
-        width: 100%;
       "
     >
-      <a class="navbar-brand" href="./index.html">
-        <img
+      <a class="navbar-brand" href="./index.html"
+        ><img
           src="./Images/logo1a.png"
           alt=""
           style="width: 19vw; height: fit-content; margin-left: 2vw"
-        />
-      </a>
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -59,7 +57,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" style="font-family: 'league gothic';">
           <li class="nav-item active">
             <a
               class="nav-link"
@@ -68,27 +66,26 @@
                 color: white;
                 margin-left: 6vw;
                 font-size: 1.7vw;
-                font-family: 'League Gothic', sans-serif;
+                font-style: 'league gothic';
               "
+              >Home <span class="sr-only">(current)</span></a
             >
-              Home <span class="sr-only">(current)</span>
-            </a>
           </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
+              style="
+                color: white;
+                margin-left: 1.5vw;
+                font-size: 1.7vw;
+                font-style: 'league gothic';
+              "
               href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style="
-                color: white;
-                margin-left: 1.5vw;
-                font-size: 1.7vw;
-                font-family: 'League Gothic', sans-serif;
-              "
             >
               Collection
             </a>
@@ -100,82 +97,76 @@
               <a
                 class="dropdown-item"
                 href="./Collection/Home_Appliances.html"
-                style="color: aliceblue; font-size: 1.6vw"
+                style="color:#ff4955; font-size: 1.6vw;"
+                >Home Appliances</a
               >
-                Home Appliances
-              </a>
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
                 href="./Collection/Shoes.html"
-                style="color: aliceblue; font-size: 1.6vw"
+                style="color:#ff4955; font-size: 1.6vw"
+                >Shoes</a
               >
-                Shoes
-              </a>
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
                 href="./Collection/cloth.html"
-                style="color: aliceblue; font-size: 1.6vw"
+                style="color:#ff4955; font-size: 1.6vw"
+                >Cloths</a
               >
-                Cloths
-              </a>
             </div>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
+              style="
+                color: white;
+                margin-left: 1.5vw;
+                font-size: 1.7vw;
+                font-style: 'league gothic';
+              "
               href="./about.html"
-              style="
-                color: white;
-                margin-left: 1.5vw;
-                font-size: 1.7vw;
-                font-family: 'League Gothic', sans-serif;
-              "
+              >About</a
             >
-              About
-            </a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
+              style="
+                color: white;
+                margin-left: 1.5vw;
+                font-size: 1.7vw;
+                font-style: 'league gothic';
+              "
               href="./contact.html"
-              style="
-                color: white;
-                margin-left: 1.5vw;
-                font-size: 1.7vw;
-                font-family: 'League Gothic', sans-serif;
-              "
+              >Contact</a
             >
-              Contact
-            </a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              href="./cart.html"
               style="
                 color: white;
                 margin-left: 1.5vw;
                 font-size: 1.7vw;
-                font-family: 'League Gothic', sans-serif;
+                font-style: 'league gothic';
               "
+              href="./cart.html"
+              >Cart</a
             >
-              Cart
-            </a>
           </li>
         </ul>
         <form
           class="form-inline my-2 my-lg-0"
-          style="display: flex; margin-left: 7vw; width: 15vw"
+          style="
+            width: fit-content;
+            display: flex;
+            margin-left: 7vw;
+            width: 15vw;
+          "
         >
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            style="outline: none"
-          />
+          <input class="form-control mr-sm-2" type="search" placeholder="Search"
+          aria-label="Search" outline: none; />
           <button
             class="btn"
             style="color: white; background-color: rgb(255, 73, 85)"
@@ -184,13 +175,15 @@
             Search
           </button>
         </form>
+
+        <!-- Button trigger modal -->
         <button
           type="button"
           class="nav-button btn btn-primary modalBTN"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           style="
-            margin: 0 1vw 0 5vw;
+            margin: 0vw 1vw 0vw 5vw;
             color: white;
             background-color: rgb(255, 73, 85);
             padding: 0.5vw 1.6vw;
