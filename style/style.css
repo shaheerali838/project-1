@@ -23,8 +23,8 @@ body {
   background-color: black !important;
   background-size: cover;
   background-attachment: fixed;
-  /* border: 2px solid white; */
-  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+
 }
 
 /* ************* section Header starts here ************* */
@@ -2200,7 +2200,8 @@ footer>.shop-div {
     width: 10vw;
   }
 }
-button:active{
+
+button:active {
   transform: scale(0.9);
   transition: .3s;
 }

@@ -331,8 +331,10 @@ footer>.shop-div {
         margin-top: 3vw;
     }
 }
-button:active{
+
+button:active {
     transform: scale(0.9);
     transition: .3s;
-  }
+}
+
 /* ************* section Footer ends here ************* */

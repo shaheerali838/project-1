@@ -24,6 +24,14 @@
     }
 }
 
+.preloader {
+    background: black url(../Images/Pendulum.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 @media screen and (max-width: 620px) {
     .AddressBar {
         width: 100%;
@@ -300,7 +308,8 @@ nav a {
     height: 30px;
     margin-right: 10px;
 }
-button:active{
+
+button:active {
     transform: scale(0.9);
     transition: .3s;
-  }
+}
