@@ -1,3 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+@media screen and (max-width: 480px) {
+    .AddressBar>p {
+        font-size: 4vw;
+        margin-left: 3vw;
+    }
+
+    .navbar>a>img {
+        width: 40vw;
+        margin-left: 3vw;
+    }
+
+    .navbar>ul {
+        margin-left: 3vw;
+    }
+
+    .navbar>ul>li {
+        margin-left: 1vw;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .AddressBar {
+        width: 100%;
+        height: fit-content;
+        padding: 1vh;
+        background-color: #ff4955;
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .AddressBar>p {
+        font-size: 1.4vw;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(219, 218, 224);
+        display: flex;
+        align-items: center;
+        margin-left: 12vw;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .navbar>a>img {
+        width: 38vw;
+        height: 18vw;
+        margin-left: 9vw;
+        border-radius: 50%;
+    }
+
+    .navbar>ul {
+        display: block;
+        list-style-type: none;
+        margin-left: 8vw;
+    }
+
+    .navbar>ul>li {
+        font-size: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0.3vw;
+        padding: 1vw 0vw;
+    }
+
+    .navbar button {
+        width: 250px;
+        margin: 1rem 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .AddressBar {
+        width: 100%;
+        height: fit-content;
+        padding: 1vh;
+        background-color: #ff4955;
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .AddressBar>p {
+        font-size: 1.4vw;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(219, 218, 224);
+        display: flex;
+        align-items: center;
+        margin-left: 12vw;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .navbar>a>img {
+        width: 38vw;
+        height: 18vw;
+        margin-left: 9vw;
+        border-radius: 50%;
+    }
+
+    .navbar>ul {
+        display: block;
+        list-style-type: none;
+        margin-left: 8vw;
+    }
+
+    .navbar>ul>li {
+        font-size: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0.3vw;
+        padding: 1vw 0vw;
+    }
+
+    .navbar button {
+        width: 250px;
+        margin: 1rem 0;
+    }
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;

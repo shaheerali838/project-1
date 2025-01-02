@@ -41,6 +41,19 @@ h1 {
 
 }
 
+button {
+    font-family: "league gothic";
+}
+
+button:focus {
+    outline: none;
+}
+
+h1 {
+    font-family: "league gothic";
+}
+
+
 .AddressBar {
     width: 100%;
     margin-bottom: 0;
@@ -50,9 +63,9 @@ h1 {
     background-color: #ff4955;
     display: flex;
     position: relative;
-  }
-  
-  .AddressBar>p {
+}
+
+.AddressBar>p {
     font-family: "league gothic";
     font-size: 1.15vw;
     font-weight: 600;
@@ -61,8 +74,11 @@ h1 {
     display: flex;
     align-items: center;
     margin-left: 12vw;
-  }
+}
 
+.navbar-expand-lg .navbar-collapse {
+    width: 100%;
+}
 
 /* ************* section Header ends here ************* */
 
@@ -73,7 +89,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 7vw;
-    text-decoration: 6px underline #FF4955;
+    /* text-decoration: 6px underline #FF4955; */
 }
 
 .main {
@@ -160,14 +176,16 @@ h1 {
 }
 
 @media screen and (max-width:480px) {
-    .main{
+    .main {
         display: block;
         margin-left: 18vw;
     }
-    .para{
+
+    .para {
         width: 60vw;
     }
-    .form{
+
+    .form {
         width: 60vw;
         margin: 12vw 0vw 0vw 0vw;
     }
@@ -259,7 +277,7 @@ footer>.shop-div {
     }
 
     .footer-img>a>img {
-        width:45vw;
+        width: 45vw;
         height: 10vh;
     }
 

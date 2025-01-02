@@ -25,6 +25,7 @@ body {
 button {
   font-family: "league gothic";
 }
+
 button:focus {
   outline: none;
 }
@@ -1942,12 +1943,7 @@ footer>.shop-div {
       }
     }
 
-
-
   }
-
-
-
 
 }
 
