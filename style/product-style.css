@@ -36,9 +36,9 @@ a {
     background-color: #ff4955;
     display: flex;
     position: relative;
-  }
-  
-  .AddressBar>p {
+}
+
+.AddressBar>p {
     font-family: "league gothic";
     font-size: 1.15vw;
     font-weight: 600;
@@ -47,7 +47,8 @@ a {
     display: flex;
     align-items: center;
     margin-left: 12vw;
-  }
+}
+
 @media screen and (max-width: 620px) {
     .AddressBar {
         width: 100%;
@@ -230,6 +231,7 @@ a {
     }
 
     .cards {
+        background: #000;
         display: grid;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
@@ -241,6 +243,7 @@ a {
         }
 
         .card {
+            background: #000;
             display: flex;
             flex-direction: column;
             justify-content: center;
