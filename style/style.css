@@ -2192,6 +2192,10 @@ footer>.shop-div {
     width: 10vw;
   }
 }
+button:active{
+  transform: scale(0.9);
+  transition: .3s;
+}
 
 
 /* ************* section Responsiveness ends here ************* */
