@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+#i {
+  color: aliceblue !important;
+}
+
+.i {
+  color: aliceblue;
+}
+
 html,
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -38,7 +46,7 @@ h1 {
   width: 100%;
   margin-bottom: 0;
   font-family: "league gothic";
-  height: 20px;
+  height: 20px !important;
   padding: .8rem;
   background-color: #ff4955;
   display: flex;
@@ -511,7 +519,7 @@ main {
 }
 
 footer {
-  width: 100%;
+  width: 100% !important;
   height: fit-content;
   padding: 4vw;
   background-color: rgba(0, 0, 0, 0.6);
