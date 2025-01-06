@@ -273,7 +273,7 @@ footer>.shop-div {
   align-items: center;
 }
 
-.cards>div>a>button,
+.cards>div>a>div>button,
 .cards>div>a>button {
   width: 9vw;
   border-radius: 10px;

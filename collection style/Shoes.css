@@ -271,11 +271,11 @@ footer>.shop-div {
   align-items: center;
 }
 
-.cards>div>a>button,
+.cards>div>a>div>button,
 .cards>div>a>button {
   width: 9vw;
   border-radius: 10px;
-  padding: 1rem;
+  padding: .8rem;
   height: auto;
   margin-bottom: 1rem;
   border: none;
@@ -294,7 +294,7 @@ footer>.shop-div {
   -o-border-radius: 10px;
 }
 
-.cards>div>a>button:hover {
+.cards>div>a>div>button:hover {
   color: #ff4955;
   background-color: #000000;
   border: #ff4955 1px solid;
