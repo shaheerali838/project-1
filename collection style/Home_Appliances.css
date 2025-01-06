@@ -7,7 +7,6 @@
   font-family: league gothic;
 }
 
-
 .preloader {
   background: black url(../Images/Pendulum.gif) no-repeat center center;
   height: 100vh;
@@ -25,63 +24,27 @@ body {
 
 .AddressBar {
   width: 100%;
-  height: fit-content;
-  padding: 2vh;
+  margin-bottom: 0;
+  font-family: "league gothic";
+  height: 20px;
+  padding: .8rem;
   background-color: #ff4955;
   display: flex;
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .AddressBar>p {
-  font-size: 1.6vw;
+  font-family: "league gothic";
+  font-size: 1.15vw;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(219, 218, 224);
   display: flex;
   align-items: center;
   margin-left: 12vw;
 }
 
-.navbar {
-  display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
-.navbar>a>img {
-  width: 27vw;
-  height: fit-content;
-  margin-left: 7vw;
-  object-fit: cover;
-}
-
-.navbar>ul {
-  display: flex;
-  list-style-type: none;
-  margin-left: 8vw;
-}
-
-.navbar>ul>li {
-  margin-left: 6vw;
-  font-size: 1.7vw;
-  font-family: league gothic;
-}
-
-.navbar>ul>li>a:hover {
-  color: #ff4955;
-  transition: 0.6s;
-}
-
-.navbar>ul>li>a {
-  text-decoration: none;
-  color: rgb(219, 218, 224);
-}
 
 @media screen and (max-width: 620px) {
   .AddressBar {
@@ -103,42 +66,7 @@ body {
     margin-left: 12vw;
   }
 
-  .navbar {
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: block;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
 
-  .navbar>a>img {
-    width: 38vw;
-    height: 18vw;
-    margin-left: 9vw;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-
-  .navbar>ul {
-    display: block;
-    list-style-type: none;
-    margin-left: 8vw;
-  }
-
-  .navbar>ul>li {
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0.3vw;
-    padding: 1vw 0vw;
-  }
 }
 
 footer {
@@ -281,12 +209,13 @@ footer>.shop-div {
   }
 }
 
+
 .Collection_content {
   text-align: center;
   padding: 5vw 0vw 5vw 0vw;
 }
 
-.Collection_content>h1 {
+.Collection_content h1 {
   color: #f0f8ff;
   font-size: 6vw;
   font-family: league gothic;
@@ -297,10 +226,11 @@ footer>.shop-div {
   font-size: 1.4vw;
 }
 
-.Collection_content>p>a {
+.Collection_content p>a {
   text-decoration: none;
   color: #ff4955;
 }
+
 
 .showing {
   margin: 10vh 0vw 0vh 2vw;
@@ -317,31 +247,59 @@ footer>.shop-div {
   padding: 2vw;
 }
 
-.cards>div {
+.cards>div>a {
   width: 22.7vw;
   height: fit-content;
   margin: 5vw 0vw 0vw 1vw;
   color: #ffffff;
   font-family: league gothic;
   font-size: 1.6vw;
+  font-style: none;
+  text-decoration: none;
   font-weight: lighter;
 }
 
-.cards>div>img {
+.cards>div>a>img {
   width: 22.7vw;
   height: 58vh;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.cards>div>button,
-.cards>div>button>a {
-  width: 6vw;
-  height: 5vh;
+.cards>div>a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards>div>a>button,
+.cards>div>a>button {
+  width: 9vw;
+  border-radius: 10px;
+  padding: 1rem;
+  height: auto;
+  margin-bottom: 1rem;
+  border: none;
   font-size: 1.3vw;
   text-decoration: none;
   color: #000000;
-  margin: 1vw 1vw 1vw 1.75vw;
+  background: #ff4955;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.cards>div>a>button:hover {
+  color: #ff4955;
+  background-color: #000000;
+  border: #ff4955 1px solid;
 }
 
 @media screen and (max-width: 920px) {
@@ -373,7 +331,7 @@ footer>.shop-div {
     padding: 2vw;
   }
 
-  .cards>div {
+  .cards>div>a {
     width: 29vw;
     height: fit-content;
     margin: 5vw 0vw 0vw 1vw;
@@ -383,19 +341,19 @@ footer>.shop-div {
     font-weight: lighter;
   }
 
-  .cards>div>img {
+  .cards>div>a>img {
     width: 29vw;
     height: 48vh;
     aspect-ratio: 1;
     object-fit: cover;
   }
 
-  .cards>div>p {
+  .cards>div>a>p {
     font-size: 2.7vw;
   }
 
-  .cards>div>button,
-  .cards>div>button>a {
+  .cards>div>a>button,
+  .cards>div>a>button>a {
     width: 10vw;
     height: 5vh;
     font-size: 2.3vw;
@@ -403,12 +361,12 @@ footer>.shop-div {
 }
 
 @media screen and (max-width: 620px) {
-  .Collection_content>h1 {
+  .Collection_content>a>h1 {
     font-size: 10vw;
     margin-top: 6vh;
   }
 
-  .Collection_content>p {
+  .Collection_content>a>p {
     color: #f0f8ff;
     font-size: 3vw;
   }
@@ -421,25 +379,25 @@ footer>.shop-div {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards>div {
+  .cards>a>div {
     width: 43.7vw;
     font-size: 1.6vw;
   }
 
-  .cards>div>img {
+  .cards>div>a>img {
     width: 43.7vw;
     height: 45vh;
     aspect-ratio: 1;
     object-fit: cover;
   }
 
-  .cards>div>p {
+  .cards>div>a>p {
     width: 100%;
     font-size: 5vw;
   }
 
-  .cards>div>button,
-  .cards>div>button>a {
+  .cards>div>a>button,
+  .cards>div>a>button>a {
     width: 12vw;
     height: 6vh;
     font-size: 3vw;
@@ -447,11 +405,11 @@ footer>.shop-div {
 }
 
 @media screen and (max-width: 420px) {
-  .Collection_content>h1 {
+  .Collection_content>a>h1 {
     font-size: 12vw;
   }
 
-  .Collection_content>p {
+  .Collection_content>a>p {
     color: #f0f8ff;
     font-size: 4vw;
   }
@@ -466,25 +424,25 @@ footer>.shop-div {
     margin-left: 3vw;
   }
 
-  .cards>div {
+  .cards>a>div {
     width: 88.7vw;
     height: fit-content;
     font-size: 1.6vw;
   }
 
-  .cards>div>img {
+  .cards>div>a>img {
     width: 88.7vw;
     height: 45vh;
     aspect-ratio: 1;
     object-fit: cover;
   }
 
-  .cards>div>p {
+  .cards>div>a>p {
     font-size: 6vw;
   }
 
-  .cards>div>button,
-  .cards>div>button>a {
+  .cards>div>a>button,
+  .cards>div>a>button>a {
     width: 20vw;
     height: 5vh;
     font-size: 5vw;
